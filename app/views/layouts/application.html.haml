@@ -12,6 +12,9 @@
     
     %header
       = render 'layouts/navigation'
-    %main{:role => "main"}
+    %main.main{:role => "main"}
+      .logo
+        Photo
       = render 'layouts/messages'
       = yield
+      = render 'layouts/bottom'
