@@ -81,7 +81,7 @@
 }
  
 .cd-nav-trigger {
-  position: absolute;
+  position: fixed;
   bottom: 5%;
   right: 4.5%;
   width: 44px;
@@ -97,7 +97,7 @@
   &:hover{text-shadow: 0 0 10px #fff;cursor: pointer;}
   
   i{
-    position: inherit;
+    //position: inherit;
     //z-index: 101;
     color: rgba(255,255,255,0.6);
 
@@ -130,6 +130,43 @@
   //}
 }
 
-.slides-pagination {
-  visibility: hidden !important;
+
+.photo-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  //position: relative;
 }
+.flexslider{
+display: block;
+//position: fixed; //fixed or absolute may be needed
+height: 100vh!important;
+overflow: hidden!important;
+width: 100vw!important;
+//position: relative;
+margin: 0;
+border: none;
+border-radius: 0;
+}
+
+.flexslider .slides,
+.flexslider .slides li{
+//width: 100%!important;
+//height: 100%!important;
+background-size: contain !important;
+position: relative;
+}
+
+.flexslider .slides img{
+//min-height: 100%;
+//min-width: 100%;
+//max-width: 100%!important; //over ride any existing responsive image styling
+margin: 0 auto!important;
+}
+
+//.flex-caption {
+//    position:absolute;
+//    left:50%;bottom:10%;
+//    background:rgba(0, 0, 0,0.6);
+//    z-index:1;padding:10px;
+// }

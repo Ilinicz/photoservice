@@ -1,5 +1,9 @@
 // import the CSS framework
-
+body html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
 
 // make all images responsive by default
 img {
