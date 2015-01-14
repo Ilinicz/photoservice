@@ -1,23 +1,24 @@
 .logo {
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 0;
-  width: 200px;
-  height: 110px;
+  //width: 200px;
+  //height: 110px;
   background-color: rgba(0,0,0,0.5);
   color: #fff;
-  border-bottom: 2px solid #fff;
-  border-right: 6px double #fff;
-  border-top: 2px solid #fff;
+  //border-bottom: 2px solid #fff;
+  //border-right: 6px double #fff;
+  //border-top: 2px solid #fff;
+  text-transform: uppercase;
   z-index: 3;
-  font-size: 50px;
+  font-size: 44px;
   font-weight: 100;
-  font-variant: small-caps;
-  padding-left: 2%;
+  padding-right: 1%;
+  padding-left: 1%;
+  
+  //padding: 2%;
 }
-.logo.minify {
-  transform: scale(0.6);
-}
+
 
 
 #cd-nav ul {
