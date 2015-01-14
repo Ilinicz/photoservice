@@ -1,6 +1,9 @@
-%nav.navbar.navbar-defaults.navbar-fixed-bottom
-  .container
-    .navbar-header
-      .navbar-brand Brand
-    %ul.nav.navbar-nav.navbar-right
-      %li=link_to "About", "#"
+#cd-nav
+  = link_to '#menu', class: "cd-nav-trigger" do
+    %i.glyphicon.glyphicon-th
+    
+  %nav#cd-main-nav
+    %ul.list-inline
+      %li=link_to 'About', '#'
+      %li=link_to 'Send Photo', '#'
+      %li=link_to 'Valhalla', '#' 
