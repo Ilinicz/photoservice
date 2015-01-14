@@ -1,9 +1,14 @@
 #cd-nav
-  = link_to '#menu', class: "cd-nav-trigger" do
+  .cd-nav-trigger
     %i.glyphicon.glyphicon-th
     
   %nav#cd-main-nav
     %ul.list-inline
-      %li=link_to 'About', '#'
-      %li=link_to 'Send Photo', '#'
+      %li
+        = link_to '#', {"data-target" => "#aboutModal", "data-toggle" => "modal", :type => "button"} do
+          О проекте
+      %li
+        / Button trigger modal
+        = link_to "#", {"data-target" => "#addPhotoModal", "data-toggle" => "modal", :type => "button"} do
+          Фото
       %li=link_to 'Valhalla', '#' 

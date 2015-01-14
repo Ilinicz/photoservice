@@ -1,0 +1,38 @@
+#addPhotoModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "addPhotoModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h4#myModalLabel.modal-title 
+      .modal-body
+        %form.form-horizontal
+          %fieldset
+            %legend Прислать фото!
+            .form-group
+              %label.col-lg-2.control-label{:for => "inputText"} Фото
+              .col-lg-10
+                %input#inputEmail.form-control{:placeholder => "Фото", :type => "text"}/
+                %span.help-block Например: http://cs623331.vk.me/v623331232/1013a/j2jJbmj3L-0.jpg
+            .form-group
+              %label.col-lg-2.control-label{:for => "inputText"} Ваше имя
+              .col-lg-10
+                %input#inputPassword.form-control{:placeholder => "Как вас зовут?", :type => "text"}/
+            .form-group
+              %label.col-lg-2.control-label{:for => "inputEmail"} Ваш почтовый адрес
+              .col-lg-10
+                %input#inputPassword.form-control{:placeholder => "Email", :type => "email"}/
+
+            .form-group
+              %label.col-lg-2.control-label{:for => "textArea"} Описание фотографии
+              .col-lg-10
+                %textarea#textArea.form-control{:rows => "3"}
+                %span.help-block Тут может быть достаточно длинное пояснение, поясняющее, как правильно пояснять да разъяснять.
+                .checkbox
+                  %label
+                    %input{:type => "checkbox"}/
+                    Хочу подписаться на обновления!
+
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Закрыть
+        %button.btn.btn-success{:type => "button"} Сохранить
