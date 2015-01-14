@@ -1,0 +1,15 @@
+%td
+  = link_to user.email, user
+%td
+  .sa
+    = form_for(user) do |f|
+      .form-group
+        = f.label :role, "Role:"
+        = f.select(:role, User.roles.keys.map {|role| [role.titleize,role]}, class: 'form-control') 
+        = button_tag type:"submit", class: "btn btn-success btn-xs" do
+          %i.glyphicon.glyphicon-trash
+
+%td
+  - unless user == current_user
+    = link_to user_path(user), :data => { :confirm => "Are you sure?" }, :method => :delete, :class => 'btn btn-danger btn-sm' do 
+      %i.glyphicon.glyphicon-trash

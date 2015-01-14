@@ -13,12 +13,14 @@ group :development, :test do
   gem 'spring'
 end
 gem 'bootstrap-sass'
+gem 'bootswatch-rails'
 gem 'devise'
 gem 'haml-rails'
 gem 'upmin-admin'
 group :development do
   gem 'better_errors'
   gem 'html2haml'
+  gem "erb2haml"
   gem 'hub', :require=>nil
   gem 'quiet_assets'
   gem 'rails_layout'

@@ -1,6 +1,5 @@
 // import the CSS framework
-@import "bootstrap-sprockets";
-@import "bootstrap";
+
 
 // make all images responsive by default
 img {
@@ -38,7 +37,7 @@ main {
   background-color: #eee;
   padding-bottom: 80px;
   width: 100%;
-  margin-top: 51px; // accommodate the navbar
+  margin-top: 65px; // accommodate the navbar
   }
 section {
   @extend .row;
@@ -56,17 +55,18 @@ section {
 .authform form {
   @extend .well;
   @extend .well-lg;
+  background-color: #fff;
   padding-bottom: 40px;
 }
 .authform .right {
   float: right !important;
 }
 .authform .button {
-  @extend .btn;
-  @extend .btn-primary;
+  //@extend .btn;
+  //@extend .btn-primary;
 }
 .authform fieldset {
-  @extend .well;
+  //@extend .well;
 }
 #error_explanation {
   @extend .alert;

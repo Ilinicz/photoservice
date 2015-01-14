@@ -1,0 +1,15 @@
+.container
+  .row
+    %h3 Users
+    .column
+      %table.table
+        %thead
+          %tr
+            %th User
+            %th Change role
+
+        %tbody
+          - @users.each do |user|
+             
+            %tr  
+              = render user
