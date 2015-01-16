@@ -1,18 +1,21 @@
 #cd-nav
   .cd-nav-trigger
-    %i.glyphicon.glyphicon-th
+    %i.fa.fa-bars
     
   %nav#cd-main-nav
     %ul.list-inline
       %li
         = link_to '#', {"data-target" => "#aboutModal", "data-toggle" => "modal", :type => "button"} do
-          О проекте
+          О журнале
       %li 
         |
       %li
         / Button trigger modal
         = link_to "#", {"data-target" => "#addPhotoModal", "data-toggle" => "modal", :type => "button"} do
-          Фото
+          Отправить фото
       %li 
         |
-      %li=link_to 'Valhalla', '#' 
+      %li=link_to 'FAQ', '#'  
+      %li
+        |
+      %li=link_to 'Авторские права', '#' 

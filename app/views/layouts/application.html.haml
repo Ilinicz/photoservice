@@ -14,7 +14,21 @@
       //= render 'layouts/navigation'
     %main.main{:role => "main"}
       .logo
-        %span Photo
+        .row
+          .col-xs-7
+            =link_to root_path do 
+              .title
+                People's
+                %br
+                Photo
+          .col-xs-5.date
+            %span
+              Журнал в
+              %br 
+              фотографиях
+             
+            %hr{style:'border:none;border-top: 1px dotted #ccc;'} 
+            %span.light Выпуск #34 (20.04.2015)
       = render 'layouts/messages'
       = render 'layouts/add_photo_modal'
       = render 'layouts/about_modal'

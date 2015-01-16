@@ -1,13 +1,14 @@
 $ ->
-  #$('#slides').superslides()
-    #animation: "fade"
-    #hashchange: true
-    #inherit_height_from: ".main"
   $('.flexslider').flexslider
-    animation: "slide"
-    slideshow: false
-    directionNav: false
+    animation: "fade"
+    slideshow: true
+    startAt: 1
+    touch: true
     controlNav: false
+    before: ->
+      $('.logo').addClass 'minify'
+  
     
   $('.cd-nav-trigger').on 'click', ->
-    $('#cd-nav ul').toggleClass 'is-visible'
+    $('#cd-nav ul, .cd-nav-trigger').toggleClass 'is-visible'
+ 

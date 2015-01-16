@@ -15,6 +15,7 @@ group :development, :test do
 end
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'
+gem "font-awesome-rails"
 gem 'devise'
 gem 'haml-rails'
 gem 'upmin-admin'
