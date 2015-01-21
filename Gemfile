@@ -6,8 +6,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
+gem 'jquery-ui-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'r18n-rails'
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
@@ -16,7 +18,9 @@ end
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'
 gem "font-awesome-rails"
+gem "cocoon"
 gem 'devise'
+gem 'simple_form'
 gem 'haml-rails'
 gem 'upmin-admin'
 group :development do

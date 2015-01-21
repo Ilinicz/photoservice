@@ -4,19 +4,48 @@
 -#  = User.count
 -#  registered
 
-.photo-container.flexslider
-  %ul.slides
-    %li
-      = image_tag "http://cs402820.vk.me/v402820781/51f2/NSXCNKQf97s.jpg"
-      //.flex-caption
-      //  Клавиатурой влево\вправо 
+//.photo-container.flexslider
+//  %ul.slides
+//    %li#1
+//      = image_tag "http://cs402820.vk.me/v402820781/51f2/NSXCNKQf97s.jpg", id:'1'
+//      //.flex-caption
+//      //  Клавиатурой влево\вправо 
+//
+//    %li#2
+//      = image_tag "http://newyorktheater.files.wordpress.com/2014/10/keiraknightley2.jpg", id: '2'
+//      //.container.text-center
+//      //  %h4 Клавиатурой влево\вправо
+//
+//    %li#3
+//      = image_tag "http://static.hdw.eweb4.com/media/wallpapers_1920x1080/celebrities/1/1/shakira-celebrity-hd-wallpaper-1920x1080-3267.jpg", id:'3'
+//.container.text-center
+//  %h4 Клавиатурой влево\вправо
 
-    %li
-      = image_tag "http://newyorktheater.files.wordpress.com/2014/10/keiraknightley2.jpg"
-      //.container.text-center
-      //  %h4 Клавиатурой влево\вправо
+//.section#section1{style: "text-align:center;"}
+.section
+  .fullscreen.background(data-img-width="1600" data-img-height="1064"){style: "background-image:url('http://cs402820.vk.me/v402820781/51f2/NSXCNKQf97s.jpg');"} 
+    .content-a
+      .content-b
+        %h1 Centered
+.section
+  .fullscreen.background(data-img-width="1600" data-img-height="1064"){style: "background-image:url('http://newyorktheater.files.wordpress.com/2014/10/keiraknightley2.jpg');"} 
+    .content-a
+      .content-b
+        %h1 Centered
+.section
+  .fullscreen.background(data-img-width="589" data-img-height="912"){style: "background-image:url('http://cs619622.vk.me/v619622803/15467/_zULOYj9OE8.jpg');"} 
+    .content-a
+      .content-b
+        %h1 Centered
+.section
+  .fullscreen.background{style: "background-image:url('http://cs616516.vk.me/v616516633/1c615/PtMnVPr20FI.jpg');"} 
+    .content-a
+      .content-b
+        %h1 Centered
 
-    %li
-      = image_tag "http://static.hdw.eweb4.com/media/wallpapers_1920x1080/celebrities/1/1/shakira-celebrity-hd-wallpaper-1920x1080-3267.jpg"
-      //.container.text-center
-      //  %h4 Клавиатурой влево\вправо
+
+%ul.flex-direction-nav
+  %li
+    = button_tag "", class: "flex-prev" 
+  %li
+    = button_tag "", class: "flex-next" 

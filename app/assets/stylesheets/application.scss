@@ -9,15 +9,18 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
- *
+ *= require jquery-ui
  */
+
 @import "bootswatch/paper/variables";
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "bootswatch/paper/bootswatch";
 @import "font-awesome";
 @import "overrides";
-//@import "superslides";
+
 @import "flexslider";
+@import 'fullscreen';
+@import "jquery.pagepiling";
 @import "details";
 
