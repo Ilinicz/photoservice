@@ -18,16 +18,20 @@ $ ->
     
   $('.cd-nav-trigger').on 'click', ->
     $('#cd-main-nav, .cd-nav-trigger').toggleClass 'is-visible'
+
+  #$('.cd-nav-trigger').hover ->
+  #  $('i.fa.fa-plus').toggleClass 'fa-rotate-90'
    
   $(".main").pagepiling
     direction: 'horizontal'
     anchors: ["one", "two", "three", "four", 'five', 'six', 'seven', 'eight', 'nine', 'ten']
+    
     normalScrollElements: ".direction-nav .cd-nav .logo"
     navigation: false
     animateAnchor: true
     #menu: '#test'
-    afterLoad: (link, index) ->
-      $("#test").slider 'setValue', index
+    onLeave: (index, nextIndex, direction) ->
+      $("#test").slider 'setValue', nextIndex
       return
         
 
