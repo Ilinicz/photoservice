@@ -17,6 +17,7 @@ group :development, :test do
 end
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'
+gem 'bootstrap-slider-rails'
 gem "font-awesome-rails"
 gem "cocoon"
 gem 'devise'

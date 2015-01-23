@@ -15,6 +15,7 @@
 //= require jquery-ui
 //= require jquery_ujs
 //= require bootstrap-sprockets
+//= require bootstrap-slider
 //= require cocoon
 //= require_tree .
 

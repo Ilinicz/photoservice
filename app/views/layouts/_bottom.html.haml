@@ -3,19 +3,24 @@
     %i.fa.fa-bars
     
   %nav#cd-main-nav
-    %ul.list-inline
-      %li
-        = link_to '#', {"data-target" => "#aboutModal", "data-toggle" => "modal", :type => "button"} do
-          О журнале
-      %li 
-        |
-      %li
-        / Button trigger modal
-        = link_to "#", {"data-target" => "#addPhotoModal", "data-toggle" => "modal", :type => "button"} do
-          Отправить фото
-      %li 
-        |
-      %li=link_to 'FAQ', '#'  
-      %li
-        |
-      %li=link_to 'Авторские права', '#' 
+    .container
+      .row
+        .col-xs-10.col-sm-9
+          %ul.list-inline
+            %li
+              = link_to '#', {"data-target" => "#aboutModal", "data-toggle" => "modal", :type => "button"} do
+                О журнале
+            %li 
+              |
+            %li
+              / Button trigger modal
+              = link_to "#", {"data-target" => "#addPhotoModal", "data-toggle" => "modal", :type => "button"} do
+                Отправить фото
+            %li 
+              |
+            %li=link_to 'FAQ', '#'  
+            %li
+              |
+            %li=link_to 'Авторские права', '#' 
+        .col-xs-2.col-sm-3
+          %input#test(data-slider-id='testSlider' type='text' data-slider-min='1' data-slider-max='10' data-slider-step='1' )
