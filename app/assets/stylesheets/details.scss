@@ -2,68 +2,85 @@
   position: absolute;
   top: 5%;
   left: 0;
-  width: 250px;
-  //height: 110px;
+  width: 35%;
+  height: 35%;
+  min-width: 462px;
+  min-height: 230px;
+  padding: 1%;
+  padding-left: 3%;
   background-color: rgba(0,0,0,0.4);
   color: #fff;
-  //border-bottom: 2px solid #fff;
-  //border-right: 6px double #fff;
-  //border-top: 2px solid #fff;
-  //border-left: 5px inset #fff;
-  text-transform: uppercase;
   z-index: 15;
+  text-shadow: 0 0 10px #000;
   
-  font-weight: 100;
-  padding-right: 1%;
-  padding-left: 1%;
-  padding-top: 1%;
-  padding-bottom: 1%;
   border-top-right-radius: 38px;
   border-bottom-right-radius: 38px;
   //padding: 2%;
   transition: all 0.5s;
-  vertical-align: middle;
-  .col-xs-7{margin: 0;}
-  .col-xs-5{padding-left: 0;margin: 0;}
-  a{color: #fff;&:hover,:focus,:active{color:#fff;text-decoration: none;}}
+  a, :hover, :focus, :active{
+    color: #fff;
+    text-decoration: none;
+  }
   .title {
-    //border-left: 2px solid #fff;
+    margin-bottom: 11%;
+    //text-align: center;
     position: relative;
     font-size: 2em;
-    //letter-spacing: 10px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
     font-weight: 900;
-    line-height: 2em;
-    text-shadow: 0 0 10px #000;
+    line-height: 2.2em;
+    
+    color: #fff;
     &:before{
       content: "";
       position: absolute;
       left: 0;
       //top: 50%;
-      bottom: 50%;
+      bottom: 0%;
       width: 20px;
       height: 3px;
       color: #fff;
       background-color: #fff;
       transition: all 0.2s;
     }
-    &:hover{&:before{width: 100%;}}
+    &:hover{&:before{width: 88%;}}
   }
-  hr {
-    margin: 0;
-    margin-top: 3%;
-    margin-bottom: 3%;
-  }
-  .date {
-    text-transform: none;
-    //line-height: 2em;
+  .issue-date {
     font-weight: 900;
+    text-align: left;
+    color: #fff;
+    letter-spacing: 6px;
 
   }
 }
 .logo.minify {
-  transform: translateX(-55%);
-  &:hover{transform: translateX(0); color: #fff;}
-  color: rgba(255,255,255,0.5);
+  //transform: translateX(-55%);
+  //&:hover{transform: translateX(0); color: #fff;}
+  //color: rgba(255,255,255,0.5);
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 10%;
+  height: 10%;
+  min-width: 132px;
+  min-height: 66px;
+  text-align: center;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 38px;
+  padding: 0;
+  background-color: rgba(#000, 0);
+  text-shadow: 0 0 12px rgba(#000, 0.6);
+  a{color: $gray-lighter;}
+  .title {
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 2em;
+    margin: 0;
+    letter-spacing: 6px;
+    &:before{content: none; width: 0; height: 0;}
+    
+  }
 }
 
 #cd-nav {

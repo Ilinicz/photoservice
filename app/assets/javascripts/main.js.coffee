@@ -32,7 +32,8 @@ $ ->
     #menu: '#test'
     onLeave: (index, nextIndex, direction) ->
       $("#test").slider 'setValue', nextIndex
-      return
+      $('.logo').addClass 'minify'
+      $('.issue-date').remove()
         
 
   $(".flex-prev").click ->
