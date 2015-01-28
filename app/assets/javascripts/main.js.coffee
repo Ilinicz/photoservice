@@ -12,6 +12,7 @@ $ ->
     value: 1
     handle: "square"
 
+
   $('#test').on 'slide', (slideEvt) ->
     $.fn.pagepiling.moveTo(slideEvt.value)
     return

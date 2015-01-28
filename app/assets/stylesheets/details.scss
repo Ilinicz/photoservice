@@ -13,8 +13,8 @@
   z-index: 15;
   text-shadow: 0 0 10px #000;
   
-  border-top-right-radius: 38px;
-  border-bottom-right-radius: 38px;
+  border-top-right-radius: 30pt;
+  border-bottom-right-radius: 30px;
   //padding: 2%;
   transition: all 0.5s;
   a, :hover, :focus, :active{
@@ -150,12 +150,12 @@
   left: 50%;
   transform: translateX(-50%);
   //right: 0;
-  padding-left: 25px;
-  padding-right: 24px;
+  padding-left: 18px;
+  padding-right: 18px;
   padding-top: 8px;
   //padding-bottom: 5px;
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%;
+  border-top-right-radius: 10pt;
+  border-top-left-radius: 10pt;
   
   //width: 90px;
   height: 45px;
@@ -311,12 +311,32 @@ margin: 0 auto!important;
 
 
 .slider.slider-horizontal {
+  position: relative;
   .slider-track {
     height: 4px;
-    background-color: $gray-lighter;
-  }
-  .slider-handle{
-    margin-left: 0;
+    background-color: $gray;
+    border-color: $gray;
+    color: $gray;
+    box-shadow: 0 0 10px #fff;
+    margin-top: -3px;
   }
 
+  .slider-handle{
+    margin-left: -3px;
+    background-color: $gray-lighter;
+  }
+  &:before {
+      content: "1";
+      color: #fff;
+      position: absolute;
+      top: -150%;
+      left: -5%;
+  }
+  &:after {
+    content: "45";
+    color: #fff;
+    position: absolute;
+    top: -150%;
+    right: -11%;
+  }
 }
