@@ -1,11 +1,15 @@
-%p#notice= notice
-
 %p
   %b Title:
   = @issue.title
 %p
   %b Number:
   = @issue.number
+%p
+  %b Photos:
+  %br
+  - @issue.photos.each do |photo|
+    %span= photo.url
+    %br
 
 = link_to 'Edit', edit_issue_path(@issue)
 \|

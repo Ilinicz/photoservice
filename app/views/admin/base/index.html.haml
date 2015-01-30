@@ -1,0 +1,12 @@
+.col-sm-12
+  .bs-callout.bs-callout-primary
+    %h4 Текущий выпуск:
+    %ul.list-unstyled.text
+      %li Номер: #{@issue.number}
+      %li Название: #{@issue.title}
+      %li Фото:
+      .photo-block{style:"display:inline-block;"}
+        - @issue.photos.each do |photo|
+          = image_tag photo.url, class: "img-responsive img-rounded", style:"display:inline-block; margin: 1%; height: 150px;"
+
+

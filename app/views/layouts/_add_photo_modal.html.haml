@@ -1,14 +1,13 @@
 #addPhotoModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "addPhotoModalLabel", :role => "dialog", :tabindex => "-1"}
   .modal-dialog
-    .modal-content
+    .modal-content{style: "background-color:rgba(0,0,0,0.5); color:#fff; font-size:14px;font-weight:500; border-radius:10pt; border-color:none;border:none;" }
       .modal-header
         %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
-          %span{"aria-hidden" => "true"} ×
-        %h4#myModalLabel.modal-title 
+          %span{"aria-hidden" => "true",style:"color:#fff;"} ×
+        %h4#myModalLabel.modal-title{style:"color:#fff;"} Отправить свою работу
       .modal-body
         %form.form-horizontal
           %fieldset
-            %legend Прислать фото!
             .form-group
               %label.col-lg-2.control-label{:for => "inputText"} Фото
               .col-lg-10
@@ -27,12 +26,12 @@
               %label.col-lg-2.control-label{:for => "textArea"} Описание фотографии
               .col-lg-10
                 %textarea#textArea.form-control{:rows => "3"}
-                %span.help-block Тут может быть достаточно длинное пояснение, поясняющее, как правильно пояснять да разъяснять.
+                %span.help-block Тут может быть достаточно длинное пояснение.
                 .checkbox
                   %label
                     %input{:type => "checkbox"}/
                     Хочу подписаться на обновления!
 
       .modal-footer
-        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Закрыть
-        %button.btn.btn-success{:type => "button"} Сохранить
+        -#%button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Закрыть
+        %button.btn.btn-success{:type => "button"} Отправить

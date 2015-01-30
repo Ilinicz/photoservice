@@ -1,5 +1,5 @@
 // import the CSS framework
-body html {
+body {
   height: 100%;
   padding: 0;
   margin: 0;
@@ -39,7 +39,7 @@ img {
 // to make views framework-neutral
 main {
   //@extend .container;
-  background-color: #eee;
+  //background-color: #eee;
   //padding-bottom: 80px;
   //width: 100%;
   //height: 100%;
@@ -92,4 +92,69 @@ section {
 .navbar-default {
   background-color: none;
   background: none;
+}
+
+.bs-callout {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+    //border-left-style: solid;
+    border-left-width: 5px;
+    border-radius: 3px;
+    color: $gray;
+}
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.bs-callout .text {
+  font-size: 18px;
+  font-weight: 100;
+  
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.bs-callout code {
+    border-radius: 3px;
+}
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+.bs-callout-default {
+    border-left-color: #777;
+}
+.bs-callout-default h4 {
+    color: #777;
+}
+.bs-callout-primary {
+    border-left-color: $brand-primary;
+}
+.bs-callout-primary h4 {
+    color: $brand-primary;
+}
+.bs-callout-success {
+    border-left-color: $brand-success;
+}
+.bs-callout-success h4 {
+    color: $brand-success;
+}
+.bs-callout-danger {
+    border-left-color: $brand-danger;
+}
+.bs-callout-danger h4 {
+    color: $brand-danger;
+}
+.bs-callout-warning {
+    border-left-color: $brand-warning;
+}
+.bs-callout-warning h4 {
+    color: $brand-warning;
+}
+.bs-callout-info {
+    border-left-color: $brand-info;
+}
+.bs-callout-info h4 {
+    color: $brand-info;
 }

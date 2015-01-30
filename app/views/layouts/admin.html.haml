@@ -8,23 +8,13 @@
     %link{:href=>"//maxcdn.bootstrapcdn.com/bootswatch/3.3.1/paper/bootstrap.min.css", :rel=>"stylesheet"}
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
-  %body
+  %body.admin
     
     %header
-      //= render 'layouts/navigation'
-    %main.main{:role => "main"}
-      .logo
-        %h1.title
-          =link_to root_path do 
-            People's Photo
-        %h5.issue-date
-          Выпуск №34
-        %h6.issue-date
-          20.06.2065
-          
-      -#= render 'layouts/messages'
-      = render 'layouts/add_photo_modal'
-      = render 'layouts/about_modal'
-      
-      = yield
-      = render 'layouts/bottom'
+      = render 'layouts/navigation'
+    
+    .container#content
+      .row
+        .col-sm-6.col-sm-offset-3      
+          = render 'layouts/messages'
+        = yield

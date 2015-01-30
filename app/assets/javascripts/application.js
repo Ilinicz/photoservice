@@ -14,9 +14,10 @@
 //= require jquery.turbolinks
 //= require jquery-ui
 //= require jquery_ujs
-//= require bootstrap-sprockets
+
 //= require bootstrap-slider
 //= require cocoon
+//= require bootstrap
 //= require_tree .
 
 //= require turbolinks

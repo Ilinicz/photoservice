@@ -7,7 +7,26 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      = link_to 'Home', root_path, class: 'navbar-brand'
+      = link_to admin_path, class: 'navbar-brand' do
+        %i.fa.fa-home.fa-lg.text-info
+        
     .collapse.navbar-collapse
       %ul.nav.navbar-nav
         = render 'layouts/navigation_links'
+      %ul.nav.navbar-nav.navbar-right
+        %li 
+          = link_to root_path do
+            На сайт
+            %i.fa.fa-eye
+        - if user_signed_in?
+          -#%li= link_to 'Edit account', edit_user_registration_path
+          %li 
+            = link_to destroy_user_session_path, :method=>'delete' do
+              Выйти
+              %i.fa.fa-sign-out.text-danger 
+        - else
+          %li
+            = link_to new_user_session_path do
+              Войти
+              %i.fa.fa-sign-in.fa-lg.text-primary
+          -#%li= link_to 'Sign up', new_user_registration_path

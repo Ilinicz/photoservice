@@ -9,21 +9,20 @@ gem 'jquery-turbolinks'
 gem 'jquery-ui-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'simple_form'
+gem 'haml-rails'
+
 gem 'r18n-rails'
-group :development, :test do
-  gem 'byebug'
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
-end
+
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'
 gem 'bootstrap-slider-rails'
 gem "font-awesome-rails"
+
 gem "cocoon"
 gem 'devise'
-gem 'simple_form'
-gem 'haml-rails'
-gem 'upmin-admin'
+gem "paranoia", "~> 2.0"
+
 group :development do
   gem 'better_errors'
   gem 'html2haml'
@@ -38,6 +37,9 @@ group :development, :test do
   gem 'faker'
   gem 'rspec-rails'
   gem 'sqlite3'
+  gem 'byebug'
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
 end
 group :production do
   gem 'pg'

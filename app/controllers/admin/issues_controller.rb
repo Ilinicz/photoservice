@@ -1,10 +1,10 @@
-class IssuesController < ApplicationController
+class Admin::IssuesController < Admin::BaseController
   before_action :set_issue, only: [:show, :edit, :update, :destroy]
 
   respond_to :html
 
   def index
-    @issues = Issue.all
+    @issues = Issue.only_deleted
     respond_with(@issues)
   end
 
