@@ -42,7 +42,8 @@ $ ->
     animateAnchor: true
     loopHorizontal: false
     resize: false
-    afterSlideLoad: (anchorLink, index, slideIndex, direction) ->
-      $("#test").slider 'setValue', (slideIndex)
+    onSlideLeave: (anchorLink, index, slideIndex, direction) ->
       $('.logo').addClass 'minify'
       $('.issue-date').remove()
+    afterSlideLoad: (anchorLink, index, slideAnchor, slideIndex) ->
+      $("#test").slider 'setValue', (slideIndex)

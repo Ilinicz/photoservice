@@ -30,19 +30,22 @@ body, main, .section {
 
 /* content centering styles */
 .content-a {
-    //display:table;
+    position: relative;
+    display:inline-block;
     text-align: right;
-    padding-top: 35%;
-    padding-right: 6%;
+    //padding-bottom: 35%;
+    //padding-right: 6%;
+    //bottom: 25%;
+    //right: 6%;
 }
 .content-b {
-  //vertical-align: 70%;
-  max-width: 450px;
-    //position: absolute;
+  
+    max-width: 450px;
+    position: absolute;
     //float: right;
     //margin-left: 60%;
-    //top: 70%;
-    //right: 8%;
+    top: 70%;
+    right: 6%;
     display:inline-block;
     //background-color: rgba(0,0,0,0.4);
     //padding: 0 auto;
@@ -52,6 +55,7 @@ body, main, .section {
     text-align:right;
     //box-shadow: 0 0 20px 10px rgba(0,0,0,0.4);
     p {
+
       display: inline-block;
       //background-color: rgba(0,0,0,0.4);
       //width: auto;

@@ -5,7 +5,7 @@ class Issue < ActiveRecord::Base
 
   acts_as_paranoid 
 
-  before_save :destroy_previous_issue #soft deletion with paranoia
+  before_create :destroy_previous_issue #soft deletion with paranoia
 
 
   def destroy_previous_issue
