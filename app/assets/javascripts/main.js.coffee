@@ -6,7 +6,7 @@ $ ->
 
 
   $('#test').on 'slide', (slideEvt) ->
-    $.fn.fullpage.moveTo(slideEvt.value)
+    $.fn.fullpage.moveTo("issue", (slideEvt.value) )
     return
     
   $('.cd-nav-trigger').on 'click', ->
@@ -30,17 +30,19 @@ $ ->
         
 
   $(".flex-prev").click ->
-    $.fn.fullpage.moveSectionUp()
+    $.fn.fullpage.moveSlideLeft()
   $(".flex-next").click ->
-    $.fn.fullpage.moveSectionDown()
+    $.fn.fullpage.moveSlideRight()
 
 
   $('#fullpage').fullpage
-    anchors: [1..45]
+    anchors: ["issue"]
     navigation: false
-    normalScrollElements: ".direction-nav .cd-nav .logo .content-b"
+    normalScrollElements: ".direction-nav .cd-nav .logo"
     animateAnchor: true
-    onLeave: (index, nextIndex, direction) ->
-      $("#test").slider 'setValue', nextIndex
+    loopHorizontal: false
+    resize: false
+    afterSlideLoad: (anchorLink, index, slideIndex, direction) ->
+      $("#test").slider 'setValue', (slideIndex)
       $('.logo').addClass 'minify'
       $('.issue-date').remove()

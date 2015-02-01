@@ -1,18 +1,19 @@
 #fullpage
-  - @issue.photos.each do |photo|
-  
-    .section
-      .fullscreen.background{style: "background-image:url(#{photo.url});"} 
-        .content-a
-          .col-xs-10.col-xs-offset-1.col-sm-4.col-sm-offset-7.content-b
-            %p 
-              = photo.description    
-              
-              %br
-              
-              = link_to photo.author_link, target: "_blank" do 
-                = photo.author_name
-                %i.fa.fa-external-link
+  .section
+    - @issue.photos.each do |photo|
+    
+      .slide
+        .fullscreen.background{style: "background-image:url(#{photo.url});"} 
+          .content-a
+            .content-b
+              %p 
+                = photo.description    
+                
+                %br
+                
+                = link_to photo.author_link, target: "_blank" do 
+                  = photo.author_name
+                  %i.fa.fa-external-link
 
 -#%ul.flex-direction-nav
 -#  %li

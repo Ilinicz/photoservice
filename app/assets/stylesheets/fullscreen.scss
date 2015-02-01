@@ -30,18 +30,20 @@ body, main, .section {
 
 /* content centering styles */
 .content-a {
-    display:table;
-    .col-sm-4 {
-        position: absolute;
-        
-    }
-
+    //display:table;
+    text-align: right;
+    padding-top: 35%;
+    padding-right: 6%;
 }
 .content-b {
-    position: absolute;
-    top: 70%;
+  //vertical-align: 70%;
+  max-width: 450px;
+    //position: absolute;
+    //float: right;
+    //margin-left: 60%;
+    //top: 70%;
     //right: 8%;
-    display:table-cell;
+    display:inline-block;
     //background-color: rgba(0,0,0,0.4);
     //padding: 0 auto;
     color: $gray-lighter;
