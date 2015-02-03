@@ -3,19 +3,14 @@
   
     .section
       .fullscreen.background{style: "background-image:url(#{photo.url});"} 
-        .content-a
-          .content-b
-            %p 
-              = photo.description    
-              
-              %br
-              
-              = link_to photo.author_link, target: "_blank" do 
-                = photo.author_name
-                %i.fa.fa-external-link
+        -#.content-a
+        -#  .content-b
+        -#    %p 
+        -#      = photo.description    
+        -#      
+        -#      %br
+        -#      
+        -#      = link_to photo.author_link, target: "_blank" do 
+        -#        = photo.author_name
+        -#        %i.fa.fa-external-link
 
--#%ul.flex-direction-nav
--#  %li
-= button_tag "", class: "flex-prev" 
--#  %li
-= button_tag "", class: "flex-next" 

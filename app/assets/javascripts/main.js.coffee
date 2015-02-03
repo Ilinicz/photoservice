@@ -1,12 +1,12 @@
 $ ->
 
   $('#test').slider
-    value: 1
+    value: 0
     handle: "square"
-
-
+  
+  
   $('#test').on 'slide', (slideEvt) ->
-    $.fn.fullpage.moveTo(slideEvt.value)
+    $.fn.pagepiling.moveTo(slideEvt.value)
     return
     
   $('.cd-nav-trigger').on 'click', ->
@@ -15,34 +15,36 @@ $ ->
   #$('.cd-nav-trigger').hover ->
   #  $('i.fa.fa-plus').toggleClass 'fa-rotate-90'
    
-  #$(".main").pagepiling
-  #  direction: 'horizontal'
-  #  anchors: [1..45]
-  #  
-  #  normalScrollElements: ".direction-nav .cd-nav .logo"
-  #  navigation: false
-  #  animateAnchor: true
-  #  #menu: '#test'
-  #  onLeave: (index, nextIndex, direction) ->
-  #    $("#test").slider 'setValue', nextIndex
-  #    $('.logo').addClass 'minify'
-  #    $('.issue-date').remove()
+  $("#fullpage").pagepiling
+    direction: 'horizontal'
+    anchors: [1..45]
+    
+    #normalScrollElements: ".direction-nav .cd-nav .logo #test .flex-prev .flex-next"
+    navigation: false
+    animateAnchor: true
+    #menu: '#test'
+    onLeave: (index, nextIndex, direction) ->
+      $("#test").slider 'setValue', nextIndex
+      $('.logo').addClass 'minify'
+      $('.issue-date').remove()
         
 
   $(".flex-prev").click ->
-    $.fn.fullpage.moveSectionUp()
+    $.fn.pagepiling.moveSectionUp()
   $(".flex-next").click ->
-    $.fn.fullpage.moveSectionDown()
+    $.fn.pagepiling.moveSectionDown()
 
 
-  $('#fullpage').fullpage
-    anchors: [1..45]
-    navigation: false
-    normalScrollElements: ".direction-nav .cd-nav .logo"
-    animateAnchor: true
-    loopHorizontal: false
-    resize: false
-    onLeave: (index, nextIndex, direction) ->
-      $('.logo').addClass 'minify'
-      $('.issue-date').remove()
-      $("#test").slider 'setValue', (nextIndex)
+  #$('#fullpage').fullpage
+  #  anchors: ["page"]
+  #  navigation: false
+  #  normalScrollElements: ".direction-nav .cd-nav .logo"
+  #  animateAnchor: true
+  #  loopHorizontal: false
+  #  resize: false
+  #  onSlideLeave: (anchor, index, slideIndex, direction) ->
+  #    $('.logo').addClass 'minify'
+  #    $('.issue-date').remove()
+  #    $("#test").slider 'setValue', (slideIndex+1)
+    #afterSlideLoad: (anchorLink, index, slideAnchor, slideIndex) ->
+      #$("#test").slider 'setValue', (slideIndex)

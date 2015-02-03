@@ -11,7 +11,7 @@
   padding-left: 2%;
   background-color: rgba(0,0,0,0.4);
   color: #fff;
-  z-index: 46;
+  z-index: 100;
   text-shadow: 0 0 10px #000;
   
   border-top-right-radius: 30pt;
@@ -92,7 +92,7 @@
 }
 #cd-main-nav {
   /* mobile first */
-  position: fixed;
+  position: absolute;
   width: 100%;
   //text-align: center;
   //max-width: 450px;
@@ -207,101 +207,6 @@
 }
 
 
-.photo-container {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  //position: relative;
-}
-.flexslider{
-display: block;
-//position: fixed; //fixed or absolute may be needed
-height: 100vh!important;
-overflow: hidden!important;
-width: 100vw!important;
-//position: relative;
-margin: 0;
-border: none;
-border-radius: 0;
-background-color: #111;
-z-index: 1;
-}
-
-.flexslider .slides,
-.flexslider .slides li{
-//width: 100%!important;
-//height: 100%!important;
-background-size: contain !important;
-position: relative;
-}
-
-.flexslider .slides img{
-//min-height: 100%;
-//min-width: 100%;
-//max-width: 100%!important; //over ride any existing responsive image styling
-margin: 0 auto!important;
-}
-
-//.flex-caption {
-//    position:absolute;
-//    left:50%;bottom:10%;
-//    background:rgba(0, 0, 0,0.6);
-//    z-index:1;padding:10px;
-// }
-
-
-
-.flex-direction-nav {
-  position: static;
-  top: 0;
-  display: block;
-  //z-index: -1;
-  width: 100%;
-  height: 100%;
-  li {
-    height: 100%;
-    position: absolute;
-    //width: 100%;
-    top: 0;
-    //z-index: -1;
-    button {
-      padding: 0;
-      margin: 0;
-      border: none;
-      position: absolute;
-      display: block;
-      height: 100%;
-      width: 4%;
-      text-indent: -9999px;
-      min-width: 50px;
-      top: 0;
-      z-index: 99;
-      opacity: 0.3;
-      &:hover{background-color: rgba(0,0,0,1);}
-    }
-    button.flex-prev {
-      left: 0;
-      //background-position: 40% 50%;
-      opacity: 0.3;
-      outline: 0;
-      transition: all 0.5s;
-      background: image_url('arleft.png') 43% 50% no-repeat;
-      overflow: hidden;
-      &:before{content: none;}
-      &:hover{background-color: rgba(#000,0.4);}
-    }
-    button.flex-next {
-      right: 0;
-      opacity: 0.3;
-      outline: 0;
-      transition: all 0.5s;
-      background: transparent image_url('arright.png') 57% 50% no-repeat;
-      overflow: hidden;
-      &:before{content: none;}
-      &:hover{background-color: rgba(#000,0.4);}
-    }
-  }
-}
 
 .slider-handle {
   background: rgba(#111, 0.8);
@@ -312,7 +217,7 @@ margin: 0 auto!important;
 
 
 .slider.slider-horizontal {
-  z-index: 99;
+  //z-index: 100;
   position: relative;
   .slider-track {
     height: 4px;
@@ -328,7 +233,7 @@ margin: 0 auto!important;
     background-color: $gray-lighter;
   }
   &:before {
-      content: "1";
+      content: "0";
       color: #fff;
       position: absolute;
       top: -150%;
@@ -343,7 +248,8 @@ margin: 0 auto!important;
   }
 }
 
-    button.flex-prev {
+    .flex-prev {
+      z-index: 100;
       padding: 0;
       margin: 0;
       border: none;
@@ -362,7 +268,8 @@ margin: 0 auto!important;
       &:before{content: none;}
       &:hover{background-color: rgba(#000,0.4);}
     }
-    button.flex-next {
+    .flex-next {
+      z-index: 100;
       padding: 0;
       margin: 0;
       border: none;
