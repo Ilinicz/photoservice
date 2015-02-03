@@ -1,9 +1,9 @@
 #fullpage
   .section
     - @issue.photos.each_with_index do |photo, index|
-    
+
       .slide{"data-anchor"=>"#{index+1}", id: "#{index+1}"}
-        .fullscreen.background{style: "background-image:url(#{photo.url});"} 
+        .fullscreen(data-aload class="background" style="background-image:url(#{photo.url});") 
           .content-a
             .content-b
               %p 
