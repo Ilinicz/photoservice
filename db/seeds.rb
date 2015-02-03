@@ -38,6 +38,13 @@ params = { issue:
       },
       {
         title: "Название фотографии",
+        url: "http://hdwallpaperd.com/wp-content/uploads/3d-balls-hd-wallpapers-free.jpg",
+        description: "Авангардистские шары модернизма хаотично катаются по наклонной поверхности, преисполненные разноцветности и коммунистического духа. Посредством отражения друг в друге, шары имитируют человеческое общество.",
+        author_name: "Винцент Илинич",
+        author_link: "http://vk.com/id103234803"
+      },
+      {
+        title: "Название фотографии",
         url: "http://www.osmais.com/wallpapers/201204/lampadas-wallpaper.jpg",
         description: "Необычная фотография",
         author_name: "Винцент Илинич",
@@ -75,13 +82,6 @@ params = { issue:
         title: "Название фотографии",
         url: "null",
         description: "Вот что будет, если не загрузить фотографию",
-        author_name: "Винцент Илинич",
-        author_link: "http://vk.com/id103234803"
-      },
-      {
-        title: "Название фотографии",
-        url: "http://hdwallpaperd.com/wp-content/uploads/3d-balls-hd-wallpapers-free.jpg",
-        description: "Авангардистские шары модернизма хаотично катаются по наклонной поверхности, преисполненные разноцветности и коммунистического духа. Посредством отражения друг в друге, шары имитируют человеческое общество.",
         author_name: "Винцент Илинич",
         author_link: "http://vk.com/id103234803"
       },
