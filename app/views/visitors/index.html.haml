@@ -1,16 +1,18 @@
 #fullpage
-  - @issue.photos.each do |photo|
-  
-    .section
-      .fullscreen.background{style: "background-image:url(#{photo.url});"} 
-        -#.content-a
-        -#  .content-b
-        -#    %p 
-        -#      = photo.description    
-        -#      
-        -#      %br
-        -#      
-        -#      = link_to photo.author_link, target: "_blank" do 
-        -#        = photo.author_name
-        -#        %i.fa.fa-external-link
+  .section
+    - @issue.photos.each_with_index do |photo, index|
+    
+      .slide{"data-anchor"=>"#{index+1}", id: "#{index+1}"}
+        .fullscreen.background{style: "background-image:url(#{photo.url});"} 
+          .content-a
+            .content-b
+              %p 
+                = photo.description    
+                
+                %br
+                
+                = link_to photo.author_link, target: "_blank" do 
+                  = photo.author_name
+                  %i.fa.fa-external-link
+      }
 
