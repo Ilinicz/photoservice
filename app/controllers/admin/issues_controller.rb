@@ -14,6 +14,9 @@ class Admin::IssuesController < Admin::BaseController
 
   def new
     @issue = Issue.new
+    45.times do
+      photo = @issue.photos.build
+    end
     respond_with(@issue)
   end
 

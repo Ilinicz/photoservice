@@ -1,4 +1,4 @@
-= simple_form_for(@issue, html: { class: 'form-vertical' }) do |f|
+= simple_form_for(@issue, html: { class: 'form-inline' }) do |f|
   - if @issue.errors.any?
     #error_explanation
       %h2= "#{pluralize(@issue.errors.count, "error")} prohibited this issue from being saved:"
@@ -6,13 +6,18 @@
         - @issue.errors.full_messages.each do |msg|
           %li= msg
 
+  %h4 Номер выпуска:
+  .form-group
+    
+    = f.input :number, label: false, autofocus:true
+  .bs-callout.bs-callout-success
+    %h4 Фото:
+    #photos
+      = f.simple_fields_for :photos do |photo|
+        = render 'photo_fields', f: photo
+      //.links
+      //  = link_to_add_association 'add photo', f, :photos
   
-  = f.input :title
-  = f.input :number
-  #photos
-    = f.simple_fields_for :photos do |photo|
-      = render 'photo_fields', f: photo
-    .links
-      = link_to_add_association 'add photo', f, :photos
-  .actions
-    = f.submit class: 'btn btn-success' 
+  = f.submit "Сохранить", class: 'btn btn-success btn-block'
+
+     

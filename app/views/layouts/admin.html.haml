@@ -4,6 +4,15 @@
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
     %title= content_for?(:title) ? yield(:title) : 'Photo'
     %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Photo'}"}
+    :javascript
+      function aload(a){"use strict";a=a||window.document.querySelectorAll("[data-aload]"),void 0===a.length&&(a=[a]);var b,c=0,d=a.length;for(c;d>c;c+=1)b=a[c],b["LINK"!==b.tagName?"src":"href"]=b.getAttribute("data-aload"),b.removeAttribute("data-aload");return a}
+    :javascript
+      window.onload = function () {
+        aload();
+      };
+    :css
+      [data-aload] { background-image: none !important; }
+
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     %link{:href=>"//maxcdn.bootstrapcdn.com/bootswatch/3.3.1/paper/bootstrap.min.css", :rel=>"stylesheet"}
     = javascript_include_tag 'application', 'data-turbolinks-track' => true

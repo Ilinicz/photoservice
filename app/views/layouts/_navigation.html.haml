@@ -12,21 +12,25 @@
         
     .collapse.navbar-collapse
       %ul.nav.navbar-nav
-        = render 'layouts/navigation_links'
+        %li= link_to 'ТЕКУЩИЙ', current_issue
+        %li= link_to 'НОВЫЙ', new_issue_path
+        %li.divider-vertical
+        %li.disabled= link_to 'АРХИВ', '#'
       %ul.nav.navbar-nav.navbar-right
         %li 
           = link_to root_path do
-            На сайт
-            %i.fa.fa-eye
+            НА САЙТ
+            
+        %li.divider-vertical
         - if user_signed_in?
           -#%li= link_to 'Edit account', edit_user_registration_path
           %li 
             = link_to destroy_user_session_path, :method=>'delete' do
-              Выйти
+              ВЫЙТИ
               %i.fa.fa-sign-out.text-danger 
         - else
           %li
             = link_to new_user_session_path do
-              Войти
+              ВОЙТИ
               %i.fa.fa-sign-in.fa-lg.text-primary
           -#%li= link_to 'Sign up', new_user_registration_path

@@ -1,16 +1,33 @@
-%p
-  %b Title:
-  = @issue.title
-%p
-  %b Number:
-  = @issue.number
-%p
-  %b Photos:
-  %br
-  - @issue.photos.each do |photo|
-    %span= photo.url
-    %br
+.col-sm-12
+  .bs-callout.bs-callout-info
+    .pull-right= link_to 'Редактировать', edit_issue_path(@issue), class: "btn btn-warning"
+    %h4 
+      Выпуск ##{@issue.number} 
+      %small  от #{@issue.created_at.strftime("%d/%m/%Y")} ~ текущий
+    
+    %hr
+    %table.table.table-hover
+      %thead
+        %tr
+          %th #
+          %th Фото
+          %th Автор 
+          %th Описание
+      %tbody
+      - @issue.photos.each_with_index do |photo, index|
+        %tr
+          %th #{index+1} 
+        
+          %td.col-sm-5
+            = link_to photo.url, target:"_blank", style:"text-decoration:none;" do
+              %img{"data-aload"=>photo.url, class: "img-responsive img-rounded"}
+          %td.col-sm-2 
+            %strong= link_to photo.author_name, photo.author_link, target:"_blank"
+          %td
+            %strong= photo.description
 
-= link_to 'Edit', edit_issue_path(@issue)
-\|
-= link_to 'Back', issues_path
+
+
+= link_to 'Назад', admin_path, class: "btn btn-default"
+= link_to 'Редактировать', edit_issue_path(@issue), class: "btn btn-warning"
+

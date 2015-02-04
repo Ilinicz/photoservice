@@ -1,12 +1,30 @@
-.col-sm-12
-  .bs-callout.bs-callout-primary
-    %h4 Текущий выпуск:
-    %ul.list-unstyled.text
-      %li Номер: #{@issue.number}
-      %li Название: #{@issue.title}
-      %li Фото:
-      .photo-block{style:"display:inline-block;"}
-        - @issue.photos.each do |photo|
-          = image_tag photo.url, class: "img-responsive img-rounded", style:"display:inline-block; margin: 1%; height: 150px;"
+.col-sm-12{style:"padding-top:2%;padding-bottom:5%;"}
+  %h3.pull-left{style:"padding:0; margin:0;"}
+    People's Photo
+    .lead.text-muted "И прочее в том же духе, да еще горький мате", Хулио Кортасар.
+
+  %strong.text-right.pull-right
+    текущий выпуск ##{@issue.number}
+    %br
+    = @issue.created_at.strftime("%d/%m/%Y")
+
+.col-sm-4
+  .bs-callout.bs-callout-success
+    %h4 Создать новый выпуск
+    = link_to new_issue_path, class: "btn btn-success btn-block" do
+      %i.fa.fa-paint-brush.fa-lg
+.col-sm-4
+  .bs-callout.bs-callout-info
+    %h4 Посмотреть текущий
+    = link_to issue_path(@issue), class: "btn btn-info btn-block" do
+      %i.fa.fa-eye.fa-lg
+.col-sm-4
+  .bs-callout.bs-callout-warning
+    %h4 Редактировать текущий
+    = link_to edit_issue_path(@issue), class: "btn btn-warning btn-block" do
+      %i.fa.fa-edit.fa-lg
 
 
+
+
+    

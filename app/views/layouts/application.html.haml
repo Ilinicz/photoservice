@@ -27,9 +27,9 @@
         =link_to root_path do 
           People's Photo
       %h5.issue-date
-        Выпуск №34
+        Выпуск №#{current_issue_number}
       %h6.issue-date
-        20.06.2065
+        = current_issue.created_at.strftime("%d.%m.%Y")
           
       
     = yield

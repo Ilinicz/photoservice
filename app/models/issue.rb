@@ -1,7 +1,22 @@
+# == Schema Information
+#
+# Table name: issues
+#
+#  id         :integer          not null, primary key
+#  title      :string
+#  number     :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  deleted_at :datetime
+#
+
 class Issue < ActiveRecord::Base
 
   has_many :photos, dependent: :destroy
-  accepts_nested_attributes_for :photos, reject_if: :all_blank, allow_destroy: true
+
+  accepts_nested_attributes_for :photos, reject_if: :all_blank, :allow_destroy => true
+
+  
 
   acts_as_paranoid 
 

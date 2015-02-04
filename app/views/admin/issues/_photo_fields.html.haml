@@ -1,4 +1,7 @@
-.nested_fields
-  = f.input :title
-  = f.input :url
-  = link_to_remove_association "remove photo", f
+.nested-fields
+  .form-group
+    = f.input :url, label: "URL:"
+    = f.input :author_name, label: "Автор:"
+    = f.input :author_link, label: "Ссылка на автора:"
+    = f.input :description, label: "Описание:"
+    //= link_to_remove_association "remove photo", f

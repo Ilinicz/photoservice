@@ -7,8 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 #user = CreateAdminService.new.call
 #puts 'CREATED ADMIN USER: ' << user.email
-
-
+User.delete_all
+User.create!(email:"admin@example.com", password: "changeme", password_confirmation:"changeme", role:"admin")
 
 params = { issue: 
   {
@@ -38,7 +38,7 @@ params = { issue:
       },
       {
         title: "Название фотографии",
-        url: "http://hdwallpaperd.com/wp-content/uploads/3d-balls-hd-wallpapers-free.jpg",
+        url: "http://i.imgur.com/Je7AnCn.jpg",
         description: "Авангардистские шары модернизма хаотично катаются по наклонной поверхности, преисполненные разноцветности и коммунистического духа. Посредством отражения друг в друге, шары имитируют человеческое общество.",
         author_name: "Винцент Илинич",
         author_link: "http://vk.com/id103234803"
