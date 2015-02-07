@@ -25,6 +25,9 @@ class Admin::IssuesController < Admin::BaseController
 
   def create
     @issue = Issue.new(issue_params)
+    45.times do
+      photo = @issue.photos.build(params[:photo])
+    end
     flash[:notice] = 'Issue was successfully created.' if @issue.save
     respond_with(@issue)
   end

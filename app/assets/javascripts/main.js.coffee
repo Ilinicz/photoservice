@@ -1,5 +1,8 @@
 $ ->
 
+  $('.photo-table').stickyTableHeaders
+    fixedOffset: $(".navbar-fixed-top")
+
   $('#test').slider
     value: 0
     handle: "square"

@@ -1,4 +1,4 @@
-= simple_form_for(@issue, html: { class: 'form-inline' }) do |f|
+= simple_form_for(@issue, defaults: { required: false } ) do |f|
   - if @issue.errors.any?
     #error_explanation
       %h2= "#{pluralize(@issue.errors.count, "error")} prohibited this issue from being saved:"
@@ -7,17 +7,25 @@
           %li= msg
 
   %h4 Номер выпуска:
-  .form-group
+  .form-inline{style:"margin-bottom:20px;"}
+    .form-group
+      = f.input :number, label: '#', autofocus:true
+  
+  %table.table.table-bordered.table-hover.photo-table
+    %thead{style:"background:#fff;"}
+      %tr
+        %th #
+        %th Url
+        %th Автор 
+        %th Ссылка на автора
+        %th Описание
     
-    = f.input :number, label: false, autofocus:true
-  .bs-callout.bs-callout-success
-    %h4 Фото:
-    #photos
-      = f.simple_fields_for :photos do |photo|
-        = render 'photo_fields', f: photo
+    
+    = f.simple_fields_for :photos do |photo|
+      = render 'photo_fields', f: photo
       //.links
       //  = link_to_add_association 'add photo', f, :photos
-  
+
   = f.submit "Сохранить", class: 'btn btn-success btn-block'
 
      

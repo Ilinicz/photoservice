@@ -15,4 +15,6 @@
 
 class Photo < ActiveRecord::Base
   belongs_to :issue
+
+  validates_presence_of :url, :author_name
 end

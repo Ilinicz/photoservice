@@ -17,6 +17,9 @@
         %li.divider-vertical
         %li.disabled= link_to 'АРХИВ', '#'
       %ul.nav.navbar-nav.navbar-right
+        %p.navbar-text 
+          Текущий выпуск ##{current_issue.number}
+          от #{current_issue.created_at.strftime("%d/%m/%Y")}
         %li 
           = link_to root_path do
             НА САЙТ
@@ -34,3 +37,4 @@
               ВОЙТИ
               %i.fa.fa-sign-in.fa-lg.text-primary
           -#%li= link_to 'Sign up', new_user_registration_path
+        
