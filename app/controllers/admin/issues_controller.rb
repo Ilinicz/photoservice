@@ -25,9 +25,6 @@ class Admin::IssuesController < Admin::BaseController
 
   def create
     @issue = Issue.new(issue_params)
-    45.times do
-      photo = @issue.photos.build(params[:photo])
-    end
     flash[:notice] = 'Issue was successfully created.' if @issue.save
     respond_with(@issue)
   end
@@ -44,7 +41,7 @@ class Admin::IssuesController < Admin::BaseController
 
   private
     def set_issue
-      @issue = Issue.find(params[:id])
+      @issue = Issue.last #find(params[:id])
     end
 
     def issue_params
