@@ -18,8 +18,8 @@
         %li.disabled= link_to 'АРХИВ', '#'
       %ul.nav.navbar-nav.navbar-right
         %p.navbar-text 
-          Текущий выпуск ##{current_issue.number}
-          от #{current_issue.created_at.strftime("%d/%m/%Y")}
+          Выпуск ##{current_issue.number},
+          #{time_ago_in_words current_issue.created_at} назад
         %li 
           = link_to root_path do
             НА САЙТ
