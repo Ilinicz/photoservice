@@ -41,7 +41,7 @@ class Admin::IssuesController < Admin::BaseController
 
   private
     def set_issue
-      @issue = Issue.last #find(params[:id])
+      @issue = Issue.find(params[:id])
     end
 
     def issue_params
