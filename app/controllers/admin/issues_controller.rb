@@ -36,7 +36,7 @@ class Admin::IssuesController < Admin::BaseController
 
   def destroy
     @issue.destroy
-    respond_with(@issue)
+    respond_with Issue.last
   end
 
   private

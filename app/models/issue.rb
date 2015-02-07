@@ -23,9 +23,15 @@ class Issue < ActiveRecord::Base
 
   before_create :destroy_previous_issue #soft deletion with paranoia
 
+  before_destroy :restore_previous_issue 
 
   def destroy_previous_issue
     Issue.last.destroy while Issue.any?
+  end
+
+  def restore_previous_issue
+    previous_issue = Issue.only_deleted.last
+    Issue.restore previous_issue.id, recursive:true
   end
  
   def photo_count
@@ -33,6 +39,7 @@ class Issue < ActiveRecord::Base
       errors.add(:photos, "Должно быть 45 в выпуске") 
     end 
   end
+
   
 
 end
