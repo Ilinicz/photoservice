@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   namespace :admin, as: false do
     get '/', to: 'base#index', as: :admin
 
-    resources :issues
+    resources :issues do
+      get 'restore', on: :member
+    end
   end
 end

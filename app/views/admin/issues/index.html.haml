@@ -3,20 +3,25 @@
 %table.table
   %thead
     %tr
+      %th ID
       %th Title
       %th Number
+      %th
       %th
       %th
       %th
       
   %tbody
     - @issues.each do |issue|
+
       %tr
+        %th= issue.id
         %td= issue.title
         %td= issue.number
         %td= link_to 'Show', issue
         %td= link_to 'Edit', edit_issue_path(issue)
         %td= link_to 'Destroy', issue, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to 'Restore', restore_issue_path(issue)
 
 %br
 

@@ -2,7 +2,7 @@
   .bs-callout.bs-callout-info
     .pull-right
       = link_to 'Редактировать', edit_issue_path(@issue), class: "btn btn-warning"
-      = link_to 'Удалить', @issue, :method => :delete, :data => { :confirm => 'При удалении выпуска, текущим автоматически станет предыдущий выпуск.' }, class: "btn btn-danger"
+ 
     %h4 
       Выпуск ##{@issue.number} 
       %small  от #{@issue.created_at.strftime("%d/%m/%Y")} ~ текущий

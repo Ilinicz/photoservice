@@ -1,5 +1,5 @@
 class Admin::IssuesController < Admin::BaseController
-  before_action :set_issue, only: [:show, :edit, :update, :destroy]
+  before_action :set_issue, only: [:show, :edit, :update, :destroy, :restore]
 
   respond_to :html
 
@@ -36,12 +36,18 @@ class Admin::IssuesController < Admin::BaseController
 
   def destroy
     @issue.destroy
-    respond_with Issue.last
+    redirect_to admin_path
+    #respond_with Issue.last
+  end
+
+  def restore
+    Issue.restore @issue.id, recursive:true
+    redirect_to admin_path
   end
 
   private
     def set_issue
-      @issue = Issue.find(params[:id])
+      @issue = Issue.with_deleted.find(params[:id])
     end
 
     def issue_params
