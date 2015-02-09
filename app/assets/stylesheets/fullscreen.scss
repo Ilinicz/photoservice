@@ -46,7 +46,7 @@ body, main, .section {
     position: absolute;
     //float: right;
     //margin-left: 60%;
-    top: 70%;
+    top: 65%;
     right: 6%;
     //display:inline-block;
     //background-color: rgba(0,0,0,0.4);
@@ -69,35 +69,23 @@ body, main, .section {
       //padding: 4px;
       padding-left: 10px;
       padding-right: 10px;
-      padding-bottom: 5px;
+      padding-bottom: 10px;
+      padding-top: 8px;
       margin: 0 auto;
       //margin: 15px;
       text-shadow: 0 0 10px #000;
       //background-color: rgba(#111, 0.4);
-      border-radius: 10pt;
-        a, :hover, :focus, :active {
-          color: $gray-lighter;
-          cursor: pointer;
-          //text-decoration: underline;
-          //font-size: 0.9em;
+      border-radius: 4pt;
+        a { 
+          color: $gray-light; text-decoration: none;
+          &:hover, :focus, :active {
+            color: $gray-lighter;
+            cursor: pointer;
+            text-decoration: none;
+            //text-decoration: underline;
+            //font-size: 0.9em;
+          }
         }
-      span {
-        padding: 0.2em;
-        transition: all 0.5s ease;
-
-        a, :hover, :focus, :active {
-          color: $gray-lighter;
-          //text-decoration: underline;
-          //font-size: 0.9em;
-        }
-      }
-      //&:hover {
-      //  span {
-      //    background-color: rgba(#000,0.6);
-      //    box-shadow: 0.2em 0 0 rgba(#000,0.6), -0.2em 0 0 rgba(#000,0.6);
-      //    
-      //  }
-      //}
     }
 
 }

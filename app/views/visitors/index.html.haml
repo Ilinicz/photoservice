@@ -14,6 +14,7 @@
                 = link_to photo.author_link, target: "_blank" do 
                   = photo.author_name
                   %i.fa.fa-external-link
+
                 %br
                     
                 %a(onclick="Share.vkontakte(window.location.href, '#{photo.author_name+" на PeoplesPhoto"}', '#{(photo.url).to_s}','#{photo.description}')") 
