@@ -25,12 +25,13 @@ class Admin::IssuesController < Admin::BaseController
 
   def create
     @issue = Issue.new(issue_params)
-    flash[:notice] = 'Issue was successfully created.' if @issue.save
+    flash[:notice] = 'Новый выпуск был успешно создан!' if @issue.save
     respond_with(@issue)
   end
 
   def update
-    flash[:notice] = 'Issue was successfully updated.' if @issue.update(issue_params)
+    @issue.update_attributes(issue_params)
+    flash[:notice] = 'Выпуск был успешно отредактирован!' if @issue.update_attributes(issue_params)
     respond_with(@issue)
   end
 
