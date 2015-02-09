@@ -38,6 +38,7 @@ body, main, .section {
     //padding-right: 6%;
     //bottom: 25%;
     //right: 6%;
+
 }
 .content-b {
   
@@ -68,6 +69,7 @@ body, main, .section {
       //padding: 4px;
       padding-left: 10px;
       padding-right: 10px;
+      padding-bottom: 5px;
       margin: 0 auto;
       //margin: 15px;
       text-shadow: 0 0 10px #000;
@@ -75,6 +77,7 @@ body, main, .section {
       border-radius: 10pt;
         a, :hover, :focus, :active {
           color: $gray-lighter;
+          cursor: pointer;
           //text-decoration: underline;
           //font-size: 0.9em;
         }
@@ -96,4 +99,5 @@ body, main, .section {
       //  }
       //}
     }
+
 }
