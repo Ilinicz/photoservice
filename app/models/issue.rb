@@ -12,7 +12,7 @@
 
 class Issue < ActiveRecord::Base
 
-  has_many :photos
+  has_many :photos, -> {order :id}
 
   accepts_nested_attributes_for :photos, reject_if: :all_blank, :allow_destroy => true
 

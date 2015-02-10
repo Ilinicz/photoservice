@@ -9,6 +9,7 @@ class Admin::IssuesController < Admin::BaseController
   end
 
   def show
+
     respond_with(@issue)
   end
 
@@ -21,6 +22,7 @@ class Admin::IssuesController < Admin::BaseController
   end
 
   def edit
+    
   end
 
   def create
