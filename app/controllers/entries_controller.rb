@@ -8,6 +8,6 @@ class EntriesController < ApplicationController
     @entry = Entry.new(params[:entry])
     @entry.request = request
 
-    @entry.deliver!
+    redirect_to root_path if @entry.deliver
   end
 end

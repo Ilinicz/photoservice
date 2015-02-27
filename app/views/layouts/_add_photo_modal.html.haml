@@ -4,34 +4,17 @@
       .modal-header
         %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
           %span{"aria-hidden" => "true",style:"color:#fff;"} ×
-        %h4#myModalLabel.modal-title{style:"color:#fff;"} Отправить свою работу
+        %h4#myModalLabel.modal-title{style:"color:#fff;"} Отправить фото
       .modal-body
-        %form.form-horizontal
-          %fieldset
-            .form-group
-              %label.col-lg-2.control-label{:for => "inputText"} Фото
-              .col-lg-10
-                %input#inputEmail.form-control{:placeholder => "Фото", :type => "text"}/
-                %span.help-block Например: http://cs623331.vk.me/v623331232/1013a/j2jJbmj3L-0.jpg
-            .form-group
-              %label.col-lg-2.control-label{:for => "inputText"} Ваше имя
-              .col-lg-10
-                %input#inputPassword.form-control{:placeholder => "Как вас зовут?", :type => "text"}/
-            .form-group
-              %label.col-lg-2.control-label{:for => "inputEmail"} Ваш почтовый адрес
-              .col-lg-10
-                %input#inputPassword.form-control{:placeholder => "Email", :type => "email"}/
 
-            .form-group
-              %label.col-lg-2.control-label{:for => "textArea"} Описание фотографии
-              .col-lg-10
-                %textarea#textArea.form-control{:rows => "3"}
-                %span.help-block Тут может быть достаточно длинное пояснение.
-                -#.checkbox
-                -#  %label
-                -#    %input{:type => "checkbox"}/
-                -#    Хочу подписаться на обновления!
+        = simple_form_for @entry, html:{'data-toggle'=>'validator',role:"form"}, defaults: { required: false } do |f|
+          = f.input :author_name  ,label: "Представьтесь"        ,placeholder: "Ваше имя/никнейм", input_html:{required:true}
+          = f.input :author_link  ,label: 'Где найти ваши работы',placeholder: "Ссылка на ваш профиль", input_html:{required:true}
+          = f.input :author_email ,label: 'Обратная связь'       ,placeholder: "Email", input_html:{required:true} 
+          = f.input :photo_url    ,label: 'Ссылка на фотографию' ,placeholder: "http://cs621524.vk.me/v621524874/5f30/SyqyTYGQwBg.jpg", input_html:{required:true}
+          = f.input :photo_description, as: :text, label: "Описание", placeholder: "Кратко опишите где и как вы сделали свое фото, на какую камеру, обрабатывали вы его, возможно, если вы укажете параметры при которых была сделана фотография, мы с радостью их укажем.", input_html:{required:true}
+          .hidden
+            =f.input :nickname, hint: "оставьте поле пустым!"
+          .modal-footer
+            =f.button :submit, "Отправить"
 
-      .modal-footer
-        -#%button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Закрыть
-        %button.btn.btn-success{:type => "button"} Отправить

@@ -1,7 +1,7 @@
 $ ->
 
  
-
+  $('#new_entry').validator
 
   $('.photo-table').stickyTableHeaders
     fixedOffset: $(".navbar-fixed-top")
