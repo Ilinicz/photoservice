@@ -44,11 +44,11 @@ Rails.application.configure do
     address: "smtp.mail.ru",
     port: 465,
     domain: "mail.ru",
-    user_name: 'ecommetester@mail.ru',
-    password: 'enfant92',
+    user_name: 'main@peoplesphoto.ru',
+    password: 'peoplesphoto',
     authentication: :login,
-    tls: true,
-    enable_starttls_auto: true
+    tls: true
+    #enable_starttls_auto: true
   }
 
   config.action_mailer.perform_deliveries = true

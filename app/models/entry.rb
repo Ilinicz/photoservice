@@ -9,9 +9,9 @@ class Entry < MailForm::Base
   
   def headers
     {
-      subject: "new Photo",
-      to:      'vilinicz@mail.ru',
-      from:    %("#{author_name}" <#{author_email}>)
+      subject: "Новое фото",
+      to:      'entry@peoplesphoto.ru',
+      from:    %("#{author_name}" <main@peoplesphoto.ru>)
     }
   end
 end
