@@ -1,0 +1,13 @@
+.col-sm-4.col-sm-offset-4
+  %h3 Пришлите нам фото
+
+  = simple_form_for( @entry ) do |f|
+    = f.input :author_name
+    = f.input :author_link
+    = f.input :author_email
+    = f.input :photo_url
+    = f.input :photo_description, as: :text
+    .hidden
+      =f.input :nickname, hint: "оставьте поле пустым!"
+
+    =f.button :submit

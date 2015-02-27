@@ -19,9 +19,11 @@ gem 'bootswatch-rails'
 gem 'bootstrap-slider-rails'
 gem "font-awesome-rails"
 
-gem "cocoon"
-gem 'devise'
-gem "paranoia", "~> 2.0"
+gem 'mail_form'          #contact form, simple mailing
+gem "cocoon"             #nested_attr
+gem 'devise'             #auth
+gem "paranoia", "~> 2.0" #soft deletion
+gem 'ranked-model'       #sorting
 
 group :development do
   gem 'better_errors'
@@ -44,7 +46,7 @@ group :development, :test do
 end
 group :production do
   gem 'pg'
-  gem 'rails_12factor'
+  gem 'rails_12factor'    #HEROKU
   gem 'unicorn'
 end
 group :test do
