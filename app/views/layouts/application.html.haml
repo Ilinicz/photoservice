@@ -1,11 +1,20 @@
 !!!
 %html
   %head
-    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
-    %title= content_for?(:title) ? yield(:title) : 'Photo'
-    %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Photo'}"}
-
-
+    %title People's Photo - журнал о фотографии 
+    -#content_for?(:title) ? yield(:title) : 'Photo'
+    %meta{content: "initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width", name: "viewport"}
+    %meta(http-equiv="content-type" content="text/html" charset="utf-8")
+    %meta(http-equiv="x-ua-compatible" content="ie=edge,chrome=1")
+    %meta{name:"description", content: "People's Photo - это современный журнал о фотографии. Место, где можно показать свои работы миру."}
+    %meta(name="author" content="Винцент Илинич")
+    -#{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Photo'}"}
+    -# Fix for iPhone 5 fullscreen web apps
+    %meta(name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)")
+    %meta(name='apple-mobile-web-app-capable' content='yes')
+    %meta(name='apple-mobile-web-app-status-bar-style' content='black-translucent')
+    
+    = favicon_link_tag 'favicon.ico'
     :javascript
       function aload(a){"use strict";a=a||window.document.querySelectorAll("[data-aload]"),void 0===a.length&&(a=[a]);var b,c=0,d=a.length;for(c;d>c;c+=1)b=a[c],b["LINK"!==b.tagName?"src":"href"]=b.getAttribute("data-aload"),b.removeAttribute("data-aload");return a}
     :javascript

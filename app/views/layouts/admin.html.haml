@@ -18,9 +18,9 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body.admin
-    
-    %header
-      = render 'layouts/navigation'
+    - if current_user
+      %header
+        = render 'layouts/navigation'
     
     .container#content
       .row

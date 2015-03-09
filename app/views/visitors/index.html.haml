@@ -10,7 +10,7 @@
                 - @issue.photos.sample(3).each do |photo|
                   = link_to "#page/#{@issue.photos.index(photo)+1}" do
                     .random-photo
-                      = image_tag photo.url
+                      %img(data-aload="#{photo.url}")
                       .caption= photo.author_name
 
                       
