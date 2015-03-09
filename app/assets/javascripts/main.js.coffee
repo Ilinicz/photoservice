@@ -32,10 +32,16 @@ $ ->
     #animateAnchor: true
     loopHorizontal: false
     resize: false
-    onSlideLeave: (anchor, index, slideIndex, direction) ->
-      $('.logo').addClass 'minify'
-      $('.issue-date').remove()
+    #onSlideLeave: (anchor, index, slideIndex, direction) ->
+     
       #$("#test").slider 'setValue', (slideIndex)
     afterSlideLoad: (anchorLink, index, slideAnchor, slideIndex) ->
       $("#test").slider 'setValue', (slideAnchor)
-      
+
+$(window).on 'hashchange', ->
+  if(window.location.hash.match(/\d/g))
+    $('.logo').addClass 'minify'
+    $('.issue-date').hide()
+  else
+    $('.logo').removeClass 'minify'
+    $('.issue-date').show()
