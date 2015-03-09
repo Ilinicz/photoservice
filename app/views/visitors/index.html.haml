@@ -3,31 +3,40 @@
     - @issue.photos.each_with_index do |photo, index|
 
       .slide{"data-anchor"=>"#{index+1}", id: "#{index+1}"}
-        .fullscreen(data-aload class="background" style="background-image:url(#{photo.url});") 
-          .content-a
-            .content-b
-              %p 
-                = photo.description    
-                
-                %br
-                
-                = link_to photo.author_link, target: "_blank" do 
-                  = photo.author_name
-                  %i.fa.fa-external-link
+        - if index == 0
+          .fullscreen(data-aload class="background" style="background-image:url(#{photo.url});") 
+            .random-photos-container
+              .photos-flexbox
+                - @issue.photos.sample(3).each do |photo|
+                  = link_to "#page/#{@issue.photos.index(photo)+1}" do
+                    .random-photo
+                      = image_tag photo.url
+                      .caption= photo.author_name
 
-                %br
-                  
-                %a(onclick="Share.vkontakte(window.location.href, '#{photo.author_name+" на PeoplesPhoto"}', '#{(photo.url).to_s}','#{photo.description}')") 
-                  %span.fa-stack.fa-lg
-                    %i.fa.fa-square-o.fa-stack-2x
-                    %i.fa.fa-vk.fa-stack-1x
-                %a(onclick="Share.facebook(window.location.href, '#{photo.author_name+" на PeoplesPhoto"}', '#{(photo.url).to_s}','#{photo.description}')")
-                  %span.fa-stack.fa-lg
-                    %i.fa.fa-square-o.fa-stack-2x
-                    %i.fa.fa-facebook.fa-stack-1x
-                %a(onclick="Share.twitter(window.location.href, '#{photo.author_name+" на PeoplesPhoto"}')")
-                  %span.fa-stack.fa-lg
-                    %i.fa.fa-square-o.fa-stack-2x
-                    %i.fa.fa-twitter.fa-stack-1x
+                      
+        - else
+          .fullscreen(data-aload class="background" style="background-image:url(#{photo.url});") 
+            .content-a
+              .content-b
+                %p 
+                  = photo.description    
+                  %br
+                  = link_to photo.author_link, target: "_blank" do 
+                    = photo.author_name
+                    %i.fa.fa-external-link
+                    
+                  %span(style="display:block; margin-top:3px;")
+                    %a(onclick="Share.vkontakte(window.location.href, '#{photo.author_name+" на PeoplesPhoto"}', '#{(photo.url).to_s}','#{photo.description}')") 
+                      %span.fa-stack.fa-lg
+                        %i.fa.fa-square-o.fa-stack-2x
+                        %i.fa.fa-vk.fa-stack-1x
+                    %a(onclick="Share.facebook(window.location.href, '#{photo.author_name+" на PeoplesPhoto"}', '#{(photo.url).to_s}','#{photo.description}')")
+                      %span.fa-stack.fa-lg
+                        %i.fa.fa-square-o.fa-stack-2x
+                        %i.fa.fa-facebook.fa-stack-1x
+                    %a(onclick="Share.twitter(window.location.href, '#{photo.author_name+" на PeoplesPhoto"}')")
+                      %span.fa-stack.fa-lg
+                        %i.fa.fa-square-o.fa-stack-2x
+                        %i.fa.fa-twitter.fa-stack-1x
       
 

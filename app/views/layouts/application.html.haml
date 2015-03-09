@@ -27,10 +27,10 @@
       %h1.title
         =link_to root_path do 
           People's Photo
-      %h5.issue-date
-        Выпуск №#{current_issue_number}
-      %h6.issue-date
-        = current_issue.created_at.strftime("%d.%m.%Y")
+      %h4.issue-date
+        Журнал о фотографии
+        .small
+          выпуск №#{current_issue_number}
           
       
     = yield

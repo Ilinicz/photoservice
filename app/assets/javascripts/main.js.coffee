@@ -1,6 +1,5 @@
 $ ->
 
- 
   $('#new_entry').validator
 
   $('.photo-table').stickyTableHeaders

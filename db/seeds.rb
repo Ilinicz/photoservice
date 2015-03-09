@@ -17,6 +17,27 @@ params = { issue:
     photos_attributes: [
       {
         title: "Название фотографии",
+        url: "http://www.hdwallpapersfullhd.net/wp-content/uploads/2014/07/Nature-Wallpaper-HD-Desktop-Wallpaper-Background.jpg",
+        description: "Красивая Кира Найтли смотрит на нас с другой фотографии, но, увы, не с этой.",
+        author_name: "Винцент Илинич",
+        author_link: "http://vk.com/id103234803"
+      },
+      {
+        title: "Название фотографии",
+        url: "http://cdn.wonderfulengineering.com/wp-content/uploads/2014/09/new-wallpaper-2.jpeg",
+        description: "Милые животные резвятся на скамеечках.",
+        author_name: "Винцент Илинич",
+        author_link: "http://vk.com/id103234803"
+      },
+      {
+        title: "Название фотографии",
+        url: "http://p1.pichost.me/i/54/1772490.jpg",
+        description: "Красивая Кира Найтли пронзительно смотрит своими большими глазами.",
+        author_name: "Винцент Илинич",
+        author_link: "http://vk.com/id103234803"
+      },
+      {
+        title: "Название фотографии",
         url: "http://realgallery.ru/copy_pictures/orig/1009639.jpg",
         description: "Пшеничное поле с воронами.",
         author_name: "Винсент Виллем Ван Гог",
@@ -64,20 +85,7 @@ params = { issue:
         author_name: "Винцент Илинич",
         author_link: "http://vk.com/id103234803"
       },
-      {
-        title: "Название фотографии",
-        url: "http://cdn.wonderfulengineering.com/wp-content/uploads/2014/09/new-wallpaper-2.jpeg",
-        description: "Милые животные резвятся на скамеечках.",
-        author_name: "Винцент Илинич",
-        author_link: "http://vk.com/id103234803"
-      },
-      {
-        title: "Название фотографии",
-        url: "http://www.hdwallpapersfullhd.net/wp-content/uploads/2014/07/Nature-Wallpaper-HD-Desktop-Wallpaper-Background.jpg",
-        description: "Красивая Кира Найтли смотрит на нас примерно с 18 фотографии, но, увы, не с этой.",
-        author_name: "Винцент Илинич",
-        author_link: "http://vk.com/id103234803"
-      },
+
       {
         title: "Название фотографии",
         url: "null",
@@ -243,13 +251,6 @@ params = { issue:
         title: "Название фотографии",
         url: "http://cs402820.vk.me/v402820781/51f2/NSXCNKQf97s.jpg",
         description: "Бородатый мужчина в странной одежде",
-        author_name: "Винцент Илинич",
-        author_link: "http://vk.com/id103234803"
-      },
-      {
-        title: "Название фотографии",
-        url: "http://p1.pichost.me/i/54/1772490.jpg",
-        description: "Красивая Кира Найтли пронзительно смотрит своими большими глазами.",
         author_name: "Винцент Илинич",
         author_link: "http://vk.com/id103234803"
       },

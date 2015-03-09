@@ -1,36 +1,38 @@
 .logo {
   position: absolute;
-  top: 5%;
-  left: 0;
-  width: 462px;
-  height: 230px;
-  min-width: 462px;
-  min-height: 230px;
+  bottom: 20%;
+  left: 7%;
 
-  padding: 1%;
-  padding-left: 2%;
-  background-color: rgba(0,0,0,0.4);
+  //width: 462px;
+  //height: 230px;
+  //min-width: 462px;
+  //min-height: 230px;
+  //font-family: "Segoe UI Light";
+  //padding: 1%;
+  //padding-left: 2%;
+  //background-color: rgba(0,0,0,0.4);
   color: #fff;
   z-index: 100;
-  text-shadow: 0 0 10px #000;
+  text-shadow: 0 2px 6px  #000;
   
-  border-top-right-radius: 10pt;
-  border-bottom-right-radius: 10px;
+  //border-top-right-radius: 10pt;
+  //border-bottom-right-radius: 10px;
   //padding: 2%;
-  transition: all 0.5s;
+  //transition: all 0.5s;
   a, :hover, :focus, :active{
     color: #fff;
     text-decoration: none;
   }
   .title {
-    margin-bottom: 11%;
+    //margin-bottom: 11%;
     //text-align: center;
     position: relative;
-    font-size: 2em;
-    letter-spacing: 12px;
-    text-transform: uppercase;
-    font-weight: 900;
-    line-height: 2.2em;
+    font-size: 6em;
+    letter-spacing: 6px;
+    //text-transform: uppercase;
+    //font-variant: small-caps;
+    font-weight: 500;
+    line-height: 1.4em;
     
     color: #fff;
     &:before{
@@ -39,20 +41,21 @@
       left: 0;
       //top: 50%;
       bottom: 0%;
-      width: 20px;
-      height: 3px;
+      width: 22px;
+      height: 4px;
       color: #fff;
       background-color: #fff;
       transition: all 0.2s;
     }
-    &:hover{&:before{width: 88%;}}
+    
   }
   .issue-date {
-    font-weight: 900;
+    font-weight: 500;
     text-align: left;
     color: #fff;
-    letter-spacing: 6px;
-
+    letter-spacing: 2px;
+    //font-size: 2em;
+    .small {color: #fff;}
   }
 }
 .logo.minify {
@@ -61,7 +64,7 @@
   //color: rgba(255,255,255,0.5);
   position: absolute;
   top: 0;
-  left: 5%;
+  left: 6%;
   width: 10%;
   height: 10%;
   min-width: 132px;
@@ -76,6 +79,8 @@
   .title {
     padding: 0;
     font-size: 1.2em;
+    font-weight: 900;
+    text-transform: uppercase;
     line-height: 2em;
     margin: 0;
     letter-spacing: 6px;
@@ -106,7 +111,7 @@
   visibility: hidden;
   overflow: hidden;
   z-index: 100;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(#000,0.3);
   text-shadow: 0 0 10px rgba(0,0,0,1);
   color: #fff;
   font-weight: 600;
@@ -171,8 +176,8 @@
   //text-align: center;
   //color: rgba(255,255,255,0.6);
   font-size: 32px;
-  color: rgba(255,255,255,0.4);
-  background-color: rgba(0,0,0,0.4);
+  color: rgba(255,255,255,0.6);
+  background-color: rgba(#000,0.3);
   /* image replacement */
   overflow: visible;
   //text-indent: 100%;
@@ -255,15 +260,15 @@
       left: 0;
       top: 0;
       height: 100%;
-      width: 4%;
+      width: 6%;
       //background-position: 40% 50%;
-      opacity: 0.3;
+      opacity: 0.8;
       outline: 0;
       transition: all 0.5s;
       background: image_url('arleft.png') 43% 50% no-repeat;
       overflow: hidden;
       &:before{content: none;}
-      &:hover{background-color: rgba(#000,0.4);}
+      &:hover{background-color: rgba(#000,0.3);}
     }
     .flex-next {
       z-index: 100;
@@ -274,13 +279,14 @@
       display: block;
       top: 0;
       height: 100%;
-      width: 4%;
+      width: 6%;
       right: 0;
-      opacity: 0.3;
+      opacity: 0.8;
       outline: 0;
       transition: all 0.5s;
       background: transparent image_url('arright.png') 57% 50% no-repeat;
+      
       overflow: hidden;
       &:before{content: none;}
-      &:hover{background-color: rgba(#000,0.4);}
+      &:hover{background-color: rgba(#000,0.3);}
     }
