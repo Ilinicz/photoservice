@@ -2,6 +2,7 @@ $ ->
 
   $('#new_entry').validator
 
+
   $('.photo-table').stickyTableHeaders
     fixedOffset: $(".navbar-fixed-top")
 
@@ -37,6 +38,9 @@ $ ->
       #$("#test").slider 'setValue', (slideIndex)
     afterSlideLoad: (anchorLink, index, slideAnchor, slideIndex) ->
       $("#test").slider 'setValue', (slideAnchor)
+
+  $("form.new_entry").on "ajax:success", (event, data, status, xhr) ->
+    $('#ajax-modal-body').html('<p style="margin-bottom:40%;">Ваша заявка отправлена. Спасибо!</p>')
 
 $(window).on 'hashchange', ->
   if(window.location.hash.match(/\d/g))

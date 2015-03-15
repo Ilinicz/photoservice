@@ -1,7 +1,7 @@
 class VisitorsController < ApplicationController
 
   def index
-    @issue = Issue.last
+    @issue = Issue.preload(:photos).last
     @entry = Entry.new
   end
 

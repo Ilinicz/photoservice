@@ -15,7 +15,6 @@ gem 'haml-rails'
 gem 'r18n-rails'
 
 gem 'bootstrap-sass'
-gem 'bootswatch-rails'
 gem 'bootstrap-slider-rails'
 gem "font-awesome-rails"
 
@@ -34,6 +33,7 @@ group :development do
   gem 'rails_layout'
   gem 'spring-commands-rspec'
   gem 'annotate', '~> 2.6.5'
+  gem "bullet"
 end
 group :development, :test do
   gem 'factory_girl_rails'

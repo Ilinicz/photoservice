@@ -12,11 +12,14 @@
  *= require jquery-ui
  */
 
-@import "bootswatch/paper/variables";
-@import "bootstrap-sprockets";
+@import "_variables";
+
 @import "bootstrap";
+
+@import "_bootswatch";
+
 @import "bootstrap-slider";
-@import "bootswatch/paper/bootswatch";
+
 
 @import "font-awesome";
 @import "overrides";

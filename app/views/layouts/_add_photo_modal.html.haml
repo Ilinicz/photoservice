@@ -1,20 +1,20 @@
 #addPhotoModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "addPhotoModalLabel", :role => "dialog", :tabindex => "-1"}
   .modal-dialog
-    .modal-content{style: "background-color:rgba(0,0,0,0.5); color:#fff; font-size:14px;font-weight:500; border-radius:4pt; border-color:none;border:none;" }
+    .modal-content
       .modal-header
         %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
           %span{"aria-hidden" => "true",style:"color:#fff;"} ×
-        %h4#myModalLabel.modal-title{style:"color:#fff;"} Отправить фото
-      .modal-body
+        %h4#myModalLabel.modal-title Отправить фото
+      .modal-body#ajax-modal-body
 
-        = simple_form_for @entry, html:{'data-toggle'=>'validator',role:"form"}, defaults: { required: false } do |f|
+        = simple_form_for @entry, remote:true, html:{'data-toggle'=>'validator',role:"form"}, defaults: { required: false } do |f|
           = f.input :author_name  ,label: "Представьтесь"        ,placeholder: "Ваше имя/никнейм", input_html:{required:true}
           = f.input :author_link  ,label: 'Где найти ваши работы',placeholder: "Ссылка на ваш профиль", input_html:{required:true}
           = f.input :author_email ,label: 'Обратная связь'       ,placeholder: "Email", input_html:{required:true} 
           = f.input :photo_url    ,label: 'Ссылка на фотографию' ,placeholder: "http://cs621524.vk.me/v621524874/5f30/SyqyTYGQwBg.jpg", input_html:{required:true}
-          = f.input :photo_description, as: :text, label: "Описание", placeholder: "Кратко опишите где и как вы сделали свое фото, на какую камеру, обрабатывали вы его, возможно, если вы укажете параметры при которых была сделана фотография, мы с радостью их укажем.", input_html:{required:true}
+          = f.input :photo_description, as: :text, label: "Описание", placeholder: "Кратко опишите где и как вы сделали свое фото, на какую камеру, обрабатывали вы его, возможно, если вы укажете параметры при которых была сделана фотография, мы с радостью их укажем.", input_html:{required:true, rows: 3}
           .hidden
             =f.input :nickname, hint: "оставьте поле пустым!"
           .modal-footer
-            =f.button :submit, "Отправить"
+            =f.button :submit, "Отправить", id: '#ajax-submit'
 

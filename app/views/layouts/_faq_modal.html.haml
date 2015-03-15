@@ -1,0 +1,19 @@
+#faqModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "faqModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true",style:"color:#fff;"} ×
+        %h4#myModalLabel.modal-title FAQ
+      .modal-body
+        %p
+          Здесь будут популярные вопросы, у нас их пока нет.
+          %br
+          Если у Вас возникли вопросы, вы можете задать их нам по почте - 
+          %br
+          .text-center{style:"font-size:20px;"}
+            = link_to 'help@peplesphoto.ru', 'mailto:help@peplesphoto.ru'
+          
+
+      .modal-footer
+      -#  %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} ×

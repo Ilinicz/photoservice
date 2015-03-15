@@ -192,7 +192,7 @@
     if(!this.options.disable) return
     var $btn = this.$element.find('input[type="submit"], button[type="submit"]')
     $btn.toggleClass('disabled', this.isIncomplete() || this.hasErrors())
-      .css({'pointer-events': 'all', 'cursor': 'pointer'})
+      //.css({'pointer-events': 'none', 'cursor': 'default'})
   }
 
   Validator.prototype.defer = function ($el, callback) {

@@ -5,12 +5,15 @@ body.admin {
   //height: auto; 
   overflow: visible;
   margin-bottom: 10%;
+  background-color: #fff;
 }
 
 html {
   overflow: visible;
 }
-
+.navbar-default {
+  background-color: #fff;
+}
 .navbar .divider-vertical {
 height: 64px;
 margin: 0 9px;

@@ -11,19 +11,21 @@
         %li 
           |
         %li
-          / Button trigger modal
           = link_to "#", {"data-target" => "#addPhotoModal", "data-toggle" => "modal", :type => "button"} do
             Отправить фото
         %li 
           |
-        %li=link_to 'FAQ', '#'  
+        %li
+          = link_to '#', {"data-target" => "#faqModal", "data-toggle" => "modal", :type => "button"} do
+            FAQ
         %li
           |
-        %li=link_to 'Авторские права', '#' 
         %li
-          |
-        %li=link_to 'Пункт меню', '#'
+          = link_to '#', {"data-target" => "#copyrightsModal", "data-toggle" => "modal", :type => "button"} do
+            Авторские права
+        
       
         %li
           %input#test(data-slider-id='testSlider' type='text' data-slider-min='1' data-slider-max='45' data-slider-step='1' )
+
 

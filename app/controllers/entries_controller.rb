@@ -7,7 +7,10 @@ class EntriesController < ApplicationController
   def create
     @entry = Entry.new(params[:entry])
     @entry.request = request
-
-    redirect_to root_path if @entry.deliver
+    #@entry.deliver!
+    respond_to do |f|
+      f.html {redirect_to root_path}
+      f.js  {render nothing: true}
+    end
   end
 end

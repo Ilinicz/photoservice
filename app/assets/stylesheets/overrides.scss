@@ -154,3 +154,39 @@ section {
 .bs-callout-info h4 {
     color: $brand-info;
 }
+
+.modal-dialog {
+  margin-top: 0; 
+  margin-bottom: 0;
+  background-color:rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  height:100vh;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: center;
+  background:transparent;
+  color:#ffffff; 
+  font-size:14px;
+  font-weight:500; 
+  border-radius:4pt; 
+  border-color:none;
+  border:none;
+}
+
+.modal-title {
+  font-weight: 900;
+  color: $gray;
+}
+
+.modal-content form .btn.btn-default.disabled {
+  //background-image: none;
+  //background-color: transparent;
+  //color: transparent;
+  opacity: 0.3;
+  border: none;
+  cursor: default;
+}
