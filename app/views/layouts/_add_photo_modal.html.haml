@@ -16,5 +16,5 @@
           .hidden
             =f.input :nickname, hint: "оставьте поле пустым!"
           .modal-footer
-            =f.button :submit, "Отправить", id: '#ajax-submit'
+            =f.button :submit, "Отправить", id: '#ajax-submit', data: {disable_with: "Отправляю.."}
 
