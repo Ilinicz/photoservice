@@ -53,6 +53,7 @@ $(window).on "hashchange", ->
 
 $(window).load ->
   $('.loader-container').delay('1400').fadeOut 'slow'
+  $('.main').addClass "visible"
   if(window.location.hash.match(/\d/g))
     $('.logo').addClass 'minify'
     $('.issue-date').hide()

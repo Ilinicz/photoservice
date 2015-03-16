@@ -4,7 +4,6 @@ body {
   padding: 0;
   margin: 0;
   background-color: #111;
-  
 }
 
 // make all images responsive by default
@@ -38,16 +37,12 @@ img {
   }
 // apply styles to HTML elements
 // to make views framework-neutral
-main {
-  //@extend .container;
-  //background-color: #eee;
-  //padding-bottom: 80px;
-  //width: 100%;
-  //height: 100%;
-  //padding-top: 65px; // accommodate the navbar
-  //max-height: 100vh;
-  //max-width: 100vw;
-  }
+.main {
+  opacity: 0;
+} 
+.main.visible {
+  opacity: 1;
+}
 section {
   @extend .row;
   margin-top: 20px;
@@ -163,11 +158,9 @@ section {
 }
 
 .modal-content {
-  height:100vh;
-  display: -webkit-flex;
+  min-height:100vh;
   display: flex;
   flex-direction: column;
-  -webkit-flex-direction: column;
   justify-content: center;
   background:transparent;
   color:#ffffff; 

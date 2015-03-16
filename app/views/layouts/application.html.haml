@@ -49,22 +49,22 @@
         People's Photo
         .lead журнал о фотографии
     
-    //%main.main{:role => "main"}
-    .logo
-      %h1.title
-        =link_to root_path do 
-          People's Photo
-      %h4.issue-date
-        Журнал о фотографии
-        .small
-          выпуск №#{current_issue_number}
-          
-      
-    = yield
-    = button_tag "", class: "flex-prev" 
-    = button_tag "", class: "flex-next" 
-    = render 'layouts/bottom'
-    = render 'layouts/add_photo_modal'
-    = render 'layouts/about_modal'
-    = render 'layouts/faq_modal'
-    = render 'layouts/copyrights_modal'
+    .main
+      .logo
+        %h1.title
+          =link_to root_path do 
+            People's Photo
+        %h4.issue-date
+          Журнал о фотографии
+          .small
+            выпуск №#{current_issue_number}
+            
+        
+      = yield
+      = button_tag "", class: "flex-prev" 
+      = button_tag "", class: "flex-next" 
+      = render 'layouts/bottom'
+      = render 'layouts/add_photo_modal'
+      = render 'layouts/about_modal'
+      = render 'layouts/faq_modal'
+      = render 'layouts/copyrights_modal'
