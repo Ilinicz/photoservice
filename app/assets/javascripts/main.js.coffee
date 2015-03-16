@@ -30,7 +30,7 @@ $ ->
     navigation: false
     #slidesNavigation: true
     #normalScrollElements: ".direction-nav .cd-nav .logo"
-    #animateAnchor: true
+    animateAnchor: false
     loopHorizontal: false
     resize: false
     #onSlideLeave: (anchor, index, slideIndex, direction) ->
@@ -42,10 +42,17 @@ $ ->
   $("form.new_entry").on "ajax:success", (event, data, status, xhr) ->
     $('#ajax-modal-body').html('<p style="margin-bottom:40%;">Ваша заявка отправлена. Спасибо!</p>')
 
-$(window).on 'hashchange', ->
+
+$(window).on "hashchange", ->
   if(window.location.hash.match(/\d/g))
     $('.logo').addClass 'minify'
     $('.issue-date').hide()
   else
     $('.logo').removeClass 'minify'
     $('.issue-date').show()
+
+$(window).load ->
+  $('.loader-container').delay('1400').fadeOut 'slow'
+  if(window.location.hash.match(/\d/g))
+    $('.logo').addClass 'minify'
+    $('.issue-date').hide()

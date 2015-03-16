@@ -33,8 +33,22 @@
     = javascript_include_tag 'application'
     = csrf_meta_tags
 
+  
 
   %body
+    .loader-container
+      .preloader.loading
+        %span.slice
+        %span.slice
+        %span.slice
+        %span.slice
+        %span.slice
+        %span.slice
+      %br
+      %h3 
+        People's Photo
+        .lead журнал о фотографии
+    
     //%main.main{:role => "main"}
     .logo
       %h1.title

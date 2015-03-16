@@ -285,6 +285,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate (~> 2.6.5)
+  autoprefixer-rails
   better_errors
   bootstrap-sass
   bootstrap-slider-rails

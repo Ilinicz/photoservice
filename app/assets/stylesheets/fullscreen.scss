@@ -117,13 +117,8 @@ body, main, .section {
   bottom: 5%;
   right: 7%;
   width: 30%;
-  
-  
-  display: -webkit-flex;
   display: flex;
   flex-direction: column;
-  -webkit-flex-direction: column;
-
   justify-content: center;
   //align-items: center;
   height: 100vh;
@@ -131,7 +126,6 @@ body, main, .section {
 }
 
 .random-photo {
-
   position: relative;
   margin: 2%;
   width: 80%;
