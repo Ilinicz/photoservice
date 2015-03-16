@@ -10,7 +10,7 @@
   justify-content: center;
   &:before {
     content: "";
-    background: url('outline.png') repeat;
+    background: image-url('outline.png') repeat;
     opacity: 1;
     top: 0;
     left: 0;
