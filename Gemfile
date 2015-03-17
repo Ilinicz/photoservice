@@ -49,6 +49,7 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'    #HEROKU
   gem 'unicorn'
+  gem 'htmlcompressor'
 end
 group :test do
   gem 'capybara'
