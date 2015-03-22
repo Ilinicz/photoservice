@@ -25,6 +25,12 @@ gem 'devise'             #auth
 gem "paranoia", "~> 2.0" #soft deletion
 gem 'ranked-model'       #sorting
 
+gem 'memcachier'
+gem 'dalli'
+gem 'kgio'
+gem 'rack-cache'
+gem 'newrelic_rpm'
+
 group :development do
   gem 'better_errors'
   gem 'html2haml'

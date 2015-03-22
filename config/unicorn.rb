@@ -1,5 +1,5 @@
 worker_processes Integer(ENV["WEB_CONCURRENCY"] || 3)
-timeout 15
+timeout 130
 preload_app true
 
 before_fork do |server, worker|
@@ -10,6 +10,7 @@ before_fork do |server, worker|
 
   defined?(ActiveRecord::Base) and
     ActiveRecord::Base.connection.disconnect!
+    Rails.logger.info('Disconnected from ActiveRecord')
 end
 
 after_fork do |server, worker|
@@ -19,4 +20,9 @@ after_fork do |server, worker|
 
   defined?(ActiveRecord::Base) and
     ActiveRecord::Base.establish_connection
+    Rails.logger.info('Connected to ActiveRecord')
+
+  defined?(Resque) and
+    Resque.redis = ENV['REDIS_URI']
+    Rails.logger.info('Connected to Redis')
 end

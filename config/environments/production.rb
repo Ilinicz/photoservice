@@ -32,6 +32,14 @@ Rails.application.configure do
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
+  config.cache_store = :dalli_store
+  client = Dalli::Client.new(ENV["MEMCACHIER_SERVERS"],
+                             :value_max_bytes => 10485760,
+                             :expires_in => 86400) # 1 day
+  config.action_dispatch.rack_cache = {
+    :metastore    => client,
+    :entitystore  => client
+  }
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
   config.assets.digest = true
