@@ -11,11 +11,10 @@ before_fork do |server, worker|
   defined?(ActiveRecord::Base) and
     ActiveRecord::Base.connection.disconnect!
     Rails.logger.info('Disconnected from ActiveRecord')
-    
+
   defined?(Resque) and
     Resque.redis.quit
     Rails.logger.info('Disconnected from Redis')
-  end
 
 end
 
