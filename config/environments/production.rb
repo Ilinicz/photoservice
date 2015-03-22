@@ -24,26 +24,29 @@ Rails.application.configure do
   # Apache or NGINX already handles this.
   config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
   
-  config.assets.compress = true
+  #config.assets.compress = true
   #config.assets.compile = true
   config.assets.digest = true
 
-  config.static_cache_control = "public, max-age=31536000"
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
   config.cache_store = :dalli_store
-  client = Dalli::Client.new(ENV["MEMCACHIER_SERVERS"],
-                             :value_max_bytes => 10485760,
-                             :expires_in => 86400) # 1 day
+  client = Dalli::Client.new((ENV["MEMCACHIER_SERVERS"] || "").split(","),
+                             username: ENV["MEMCACHIER_USERNAME"],
+                             password: ENV["MEMCACHIER_PASSWORD"],
+                             failover: true,
+                             socket_timeout: 1.5,
+                             socket_failure_delay: 0.2,
+                             value_max_bytes: 10485760,
+                             expires_in: 86400) # 1 day
   config.action_dispatch.rack_cache = {
     :metastore    => client,
     :entitystore  => client
   }
-  # Asset digests allow you to set far-future HTTP expiration dates on all assets,
-  # yet still be able to expire them through the digest params.
-
+  config.static_cache_control = "public, max-age=2592000"
+  config.action_controller.perform_caching = true
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 

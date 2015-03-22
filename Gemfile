@@ -55,8 +55,8 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'    #HEROKU
   gem 'unicorn'
-  gem 'heroku_rails_deflate'
-  gem 'htmlcompressor'
+  #gem 'heroku_rails_deflate'
+  #gem 'htmlcompressor'
 end
 group :test do
   gem 'capybara'
