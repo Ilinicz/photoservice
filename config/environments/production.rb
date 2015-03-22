@@ -32,21 +32,9 @@ Rails.application.configure do
   config.assets.js_compressor = :uglifier
   config.assets.css_compressor = :sass
 
-  config.cache_store = :dalli_store
-  client = Dalli::Client.new((ENV["MEMCACHIER_SERVERS"] || "").split(","),
-                             username: ENV["MEMCACHIER_USERNAME"],
-                             password: ENV["MEMCACHIER_PASSWORD"],
-                             failover: true,
-                             socket_timeout: 1.5,
-                             socket_failure_delay: 0.2,
-                             value_max_bytes: 10485760,
-                             expires_in: 86400) # 1 day
-  config.action_dispatch.rack_cache = {
-    :metastore    => client,
-    :entitystore  => client
-  }
+ 
   config.static_cache_control = "public, max-age=2592000"
-  config.action_controller.perform_caching = true
+  
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
