@@ -47,7 +47,9 @@ $(window).on "hashchange", ->
   if(window.location.hash.match(/\d/g))
     $('.logo').addClass 'minify'
     $('.issue-date').hide()
+    $('.flex-prev').show()
   else
+    $('.flex-prev').hide()
     $('.logo').removeClass 'minify'
     $('.issue-date').show()
 
@@ -57,3 +59,5 @@ $(window).load ->
   if(window.location.hash.match(/\d/g))
     $('.logo').addClass 'minify'
     $('.issue-date').hide()
+  else
+    $('.flex-prev').hide()
