@@ -52,7 +52,7 @@ $(window).on "hashchange", ->
     $('.flex-prev').hide()
     $('.logo').removeClass 'minify'
     $('.issue-date').show()
-
+  
 $(window).load ->
   $('.loader-container').delay('1400').fadeOut 'slow'
   $('.main').addClass "visible"
@@ -61,3 +61,4 @@ $(window).load ->
     $('.issue-date').hide()
   else
     $('.flex-prev').hide()
+  
