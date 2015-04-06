@@ -7,7 +7,7 @@
           .fullscreen(data-aload class="background" style="background-image:url(#{photo.url});") 
             .random-photos-container
               .photos-flexbox
-                - @issue.photos.sample(3).each do |photo|
+                - @issue.photos.sample(16).each do |photo|
                   = link_to "#page/#{@issue.photos.index(photo)+1}" do
                     .random-photo
                       %img(data-aload="#{photo.url}")

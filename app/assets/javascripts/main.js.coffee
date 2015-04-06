@@ -54,6 +54,15 @@ $(window).on "hashchange", ->
     $('.issue-date').show()
   
 $(window).load ->
+  $('.photos-flexbox').mCustomScrollbar
+    keyboard:{scrollType:"stepped"},
+    mouseWheel:{scrollAmount:488},
+    theme:"minimal",
+    autoExpandScrollbar:true,
+    snapAmount:288,
+    snapOffset:65,
+    #scrollbarPosition: "inside"
+    #setLeft: "22px",
   $('.loader-container').delay('1400').fadeOut 'slow'
   $('.main').addClass "visible"
   if(window.location.hash.match(/\d/g))

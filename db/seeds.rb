@@ -17,23 +17,23 @@ params = { issue:
     photos_attributes: [
       {
         title: "Название фотографии",
-        url: "http://www.hdwallpapersfullhd.net/wp-content/uploads/2014/07/Nature-Wallpaper-HD-Desktop-Wallpaper-Background.jpg",
+        url: "https://download.unsplash.com/photo-1423753623104-718aaace6772",
         description: "Красивая Кира Найтли смотрит на нас с другой фотографии, но, увы, не с этой.",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://cdn.wonderfulengineering.com/wp-content/uploads/2014/09/new-wallpaper-2.jpeg",
         description: "Милые животные резвятся на скамеечках.",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://p1.pichost.me/i/54/1772490.jpg",
         description: "Красивая Кира Найтли пронзительно смотрит своими большими глазами.",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
@@ -61,274 +61,274 @@ params = { issue:
         title: "Название фотографии",
         url: "http://i.imgur.com/Je7AnCn.jpg",
         description: "Авангардистские шары модернизма хаотично катаются по наклонной поверхности, преисполненные разноцветности и коммунистического духа. Посредством отражения друг в друге, шары имитируют человеческое общество.",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://www.osmais.com/wallpapers/201204/lampadas-wallpaper.jpg",
         description: "Необычная фотография",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://img3.themebin.com/1920x1200/flower_wallpaper.jpg",
         description: "Игра светотеней и проникновение в глубины человеческих душ",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://www.psdreview.com/wp-content/uploads/2014/02/tree-snake-hd-hd-wallpaper.jpg",
         description: "Абстрактное сюрреалистическое сверхсовременное искусство.",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
 
       {
         title: "Название фотографии",
-        url: "null",
+        url: "https://download.unsplash.com/photo-1423753623104-718aaace6772",
         description: "Вот что будет, если не загрузить фотографию",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://www.daswallpaper.de/wallpaper/original/5368_naruto_hd_wallpapers_black-white.jpg",
         description: "Предыдущий текст был слишком длинным. Поэтому тут просто угрюмый аниме-герой",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://www.daswallpaper.de/wallpaper/original/hd-wallpaper-5985-6317-hd-wallpapers.jpg",
         description: "Алхимия, иллюминаты, синусы, тангенсы.",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://www.daswallpaper.de/wallpaper/original/Wallpaper-For-Computer-Hd.jpg",
         description: "Just relax",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://www.hdwallpapersinn.com/wp-content/uploads/2014/11/hawaii_condos_golden_sunset.jpg",
         description: "One more time pls.",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://cdn.wonderfulengineering.com/wp-content/uploads/2014/09/new-wallpaper-10.jpg",
         description: "Гретель, где ты?",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://hdwallpaperia.com/wp-content/uploads/2013/10/Abstract-Art-Paintings.jpg",
         description: "Абсолютная милота",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://cs402820.vk.me/v402820781/51f2/NSXCNKQf97s.jpg",
         description: "Бородатый мужчина в странной одежде",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://p1.pichost.me/i/54/1772490.jpg",
         description: "Красивая Кира Найтли пронзительно смотрит своими большими глазами.",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://cs402820.vk.me/v402820781/51f2/NSXCNKQf97s.jpg",
         description: "Бородатый мужчина в странной одежде",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://p1.pichost.me/i/54/1772490.jpg",
         description: "Красивая Кира Найтли пронзительно смотрит своими большими глазами.",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://cs402820.vk.me/v402820781/51f2/NSXCNKQf97s.jpg",
         description: "Бородатый мужчина в странной одежде",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://p1.pichost.me/i/54/1772490.jpg",
         description: "Красивая Кира Найтли пронзительно смотрит своими большими глазами.",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://cs402820.vk.me/v402820781/51f2/NSXCNKQf97s.jpg",
         description: "Бородатый мужчина в странной одежде",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://p1.pichost.me/i/54/1772490.jpg",
         description: "Красивая Кира Найтли пронзительно смотрит своими большими глазами.",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://cs402820.vk.me/v402820781/51f2/NSXCNKQf97s.jpg",
         description: "Бородатый мужчина в странной одежде",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://p1.pichost.me/i/54/1772490.jpg",
         description: "Красивая Кира Найтли пронзительно смотрит своими большими глазами.",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://cs402820.vk.me/v402820781/51f2/NSXCNKQf97s.jpg",
         description: "Бородатый мужчина в странной одежде",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://p1.pichost.me/i/54/1772490.jpg",
         description: "Красивая Кира Найтли пронзительно смотрит своими большими глазами.",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://cs402820.vk.me/v402820781/51f2/NSXCNKQf97s.jpg",
         description: "Бородатый мужчина в странной одежде",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://p1.pichost.me/i/54/1772490.jpg",
         description: "Красивая Кира Найтли пронзительно смотрит своими большими глазами.",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://cs402820.vk.me/v402820781/51f2/NSXCNKQf97s.jpg",
         description: "Бородатый мужчина в странной одежде",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://p1.pichost.me/i/54/1772490.jpg",
         description: "Красивая Кира Найтли пронзительно смотрит своими большими глазами.",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://cs402820.vk.me/v402820781/51f2/NSXCNKQf97s.jpg",
         description: "Бородатый мужчина в странной одежде",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://cs402820.vk.me/v402820781/51f2/NSXCNKQf97s.jpg",
         description: "Бородатый мужчина в странной одежде",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://p1.pichost.me/i/54/1772490.jpg",
         description: "Красивая Кира Найтли пронзительно смотрит своими большими глазами.",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://cs402820.vk.me/v402820781/51f2/NSXCNKQf97s.jpg",
         description: "Бородатый мужчина в странной одежде",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://p1.pichost.me/i/54/1772490.jpg",
         description: "Красивая Кира Найтли пронзительно смотрит своими большими глазами.",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://cs402820.vk.me/v402820781/51f2/NSXCNKQf97s.jpg",
         description: "Бородатый мужчина в странной одежде",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://p1.pichost.me/i/54/1772490.jpg",
         description: "Красивая Кира Найтли пронзительно смотрит своими большими глазами.",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://cs402820.vk.me/v402820781/51f2/NSXCNKQf97s.jpg",
         description: "Бородатый мужчина в странной одежде",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://p1.pichost.me/i/54/1772490.jpg",
         description: "Красивая Кира Найтли пронзительно смотрит своими большими глазами.",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://cs402820.vk.me/v402820781/51f2/NSXCNKQf97s.jpg",
         description: "Бородатый мужчина в странной одежде",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://p1.pichost.me/i/54/1772490.jpg",
         description: "Красивая Кира Найтли пронзительно смотрит своими большими глазами.",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       },
       {
         title: "Название фотографии",
         url: "http://cs402820.vk.me/v402820781/51f2/NSXCNKQf97s.jpg",
         description: "Бородатый мужчина в странной одежде",
-        author_name: "Винцент Илинич",
+        author_name: "Мануэл ди Оливейра",
         author_link: "http://vk.com/id103234803"
       }
     ]
